@@ -1,4 +1,5 @@
 <!--To enact changes via Filezilla, upload files again. If changes don't show immediately, clear cache -->
+<!--To upload changes wtih ftp-simple, CTRL-Shift-S-->
     
 <!DOCTYPE html> 
 <html lang ="en">
@@ -12,22 +13,21 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+        <link rel="icon" href="assets/JPlogo.png" type="image/icon type">
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-sm fixed-top navbar-dark py-1">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#home">Jenny Pero</a>
-            </div>
-
+        <nav class="navbar navbar-expand-sm fixed-top navbar-dark p-1">
             <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse " id="navbarNav">
-                    <ul class="nav navbar-nav ms-auto">
+                    <ul class="nav navbar-nav mx-auto">
+                        <li class= "nav-item">
+                            <a class="nav-link" href="#">HOME</a>
+                        </li>
                         <li class= "nav-item">
                             <a class="nav-link" href="#about">ABOUT</a>
                         </li>
@@ -35,7 +35,7 @@
                             <a class="nav-link" href="#portfolio">PORTFOLIO</a>
                         </li>
                         <li class= "nav-item">
-                            <a class="nav-link" href="#">RESUME</a>
+                            <a class="nav-link" href="assets/Resume - Jennifer Pero.odt">RESUME</a>
                         </li>
                     </ul>
                 </div>
@@ -44,35 +44,43 @@
 
         <!--Home-->
         <section id="home">
-        <div class="container-fluid" style="margin-top:70px">
-            <div class="row no-gutters">
-                <div class="col-md-6 px-0">
-                        <img src="pic.jpg" class="mx-auto d-block" id="my-pic">
-                </div>
-                <div class="col-md my-auto px-0">
-                    <div class="flex-grow-1 d-block">
-                        <div id="name">Jenny Pero</div>
-                        <div id="desc">Student | Programmer | Writer </div>
-                    </div>
-                </div>
-            </div>
+        <div class="container-fluid" id="cont">
+            <div id="name">Jenny Pero</div>
+            <div id="desc">Student | Programmer | Writer</div>
         </div>
         </section>
 
         <!--About-->
         <section id="about">
+                <div class="container-fluid"> 
+                    <div class="row no-gutters">
+                        <div class="col-md-6 px-0 my-auto">
+                            <img src="assets/pic.jpg" class="mx-auto d-block" id="my-pic">
+                        </div>
+                    
+                        <div class="col-md my-auto">
+                            <div class="d-block">
+                                <div id="hi">Hello, I'm Jenny!</div>
+                                <div id="about-me">I’m a Wichita Student University student majoring in Computer Science, with a certificate in Geographic Information Systems (GIS).
+                                <br><br>There are a few careers that I may consider pursuing, such as data analytics, technical writing, or web development, but right now I'm taking the time to explore all my options.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
-
         <!--Portfolio-->
-        <section>
-
-        </section id="portfolio">
-
-        <!--Resume-->
-        <section id="resume">
-
+        <section id="portfolio">
+            <div class="container-fluid">
+                <div id="port">Portfolio</div>
+                <p>Click on any of the following categories to view some of cool projects!</p>                
+                <div class="projects">
+                    <div id="proj">Data Analytics</div>
+                    <div id="proj">Technical Writing</div>
+                    <div id="proj">Various Programming Projects</div>
+                </div>
+                <p>This website is also part of my portfolio, as I made it myself from scratch, hosting it via InfinityFree</p>
+            </div>
         </section>
-
     </body>
 
 </html>

@@ -1,21 +1,16 @@
-
-.navbar-brand {
-    font-family: 'Arbutus Slab', serif;
-    font-weight: bold;
-    font-size: 25px !important;
+body {
+    height: 100%;
+    line-height: normal;
+    background-image: linear-gradient(to bottom, #611C31, #4c3254, #31435c)
 }
 
 .navbar-brand:hover {
-    color:#f05e88 !important;
+    color: #ff729a !important;
     transition: .2s;
 }
 
 .nav-link {
-    color:white !important;
-}
-
-.nav-link:active {
-    color:#f05e88 !important;
+    color: white !important;
 }
 
 .navbar-toggler {
@@ -27,55 +22,124 @@ li {
 }
 
 .navbar {
-    background-color: black;
+    background-color: #611c31;
     color: white;
-    position: absolute;
 }
 
 .nav-link {
-    font-family: Arial, Helvetica, sans-serif !important;
-    font-size: 20px;
+    font-family: Helvetica, sans-serif, sans-serif !important;
+    font-size: 1.4rem;
 }
 
 .nav-link:hover {
-    color:#f05e88 !important;
+    color: #fc6399 !important;
     transition: .2s;
+}
+
+#my-pic {
+    border: 5px solid white;
+    border-radius:50%;
+    width: 75%;
+}
+
+#cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#name {
+    color: white;
+    font-size: 8rem;
+    font-family: 'Zen Antique', serif;
+    font-weight: bold;
+    text-align: center;
 }
 
 #desc {
     font-size: 2em;
     text-align: center;
-    display: block;
     font-weight: bold;
-    color:black;
-}
-
-#my-pic {
-    border-radius:50%;
-    width: 75%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display:inline-block;
-
-}
-
-#name {
-    color:#C74B6E;
-    font-size: 6rem;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    display:block;
+    color: white;
+    font-family: 'Zen Antique', serif;
 }
 
 #home {
-    width:100%;
-    height:100vh;
-    overflow:hidden;
-    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    margin-bottom:10%;
 }
 
 #about {
-    background-color: lightpink;
+    /* background-image: linear-gradient(to bottom, #4c3254, #3d3b5c); */
+    width: 100%;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 5%;
 }
+
+#hi {
+    font-size: 3.5rem;
+    font-family: 'Zen Antique', serif;
+    font-weight: bold;
+    text-align: left;
+    display:block;
+    color: white;
+}
+
+#about-me {
+    font-size:1.5rem;
+    text-align: left;
+    display: block;
+    color:white;
+
+}
+
+#portfolio {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding:5%;
+}
+
+#port {
+    font-size: 5rem;
+    font-family: 'Zen Antique', serif;
+    font-weight: bold;
+    text-align: center;
+    display:block;
+    color: white;
+}
+
+p {
+    color:white;
+    font-size:1.3rem;
+    text-align: center;
+}
+
+.projects {
+    display: block;
+    text-align: center;
+    margin: 1%;
+}
+
+#proj {
+    color: white;
+    font-size: 3rem;
+    padding: 1%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #611C31;
+    color: white;
+    text-align: center;
+  }
