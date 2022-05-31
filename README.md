@@ -4,4 +4,4 @@ To view the website for yourself, jennycpero.rf.gd is the URL.
 
 I uploaded this repository later than I had intended, so the first branch of this website that I will be publishing will actually be the version that I have labelled as "1.3" for my website, and not 1.1 or 1.2.
 
-Though a JS file is shown, it is currently empty. At this time, my website is only using HTML and CSS. I uploaded this repository later than I had intended, so the first version of this website commited to GitHub is actually version 1.3 of my website. 
+Though a JS file is shown, it is currently empty. At this time, my website is only using HTML and CSS. 
