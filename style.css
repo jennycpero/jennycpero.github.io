@@ -80,7 +80,6 @@ li {
     align-items: center;
     justify-content: center;
     margin-top: 10%;
-    margin-bottom: 10%;
     padding: 5%;
 }
 
@@ -103,7 +102,6 @@ li {
 
 #portfolio {
     margin-top: 5%;
-    margin-bottom: 5%;
     padding:5%;
 }
 
@@ -125,7 +123,6 @@ p {
 .projects {
     display: block;
     text-align: center;
-    margin: 1%;
 }
 
 #proj {
@@ -143,12 +140,25 @@ p {
     transition: .2s;
 }
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #611C31;
-    color: white;
-    text-align: center;
+.connect {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size:2rem;
+}
+
+  .fa {
+      color: white;
   }
+
+  .fa:hover {
+      color:#fc6399;
+  }
+
+  .fa-github {
+    padding:20px;
+  }
+
+
+

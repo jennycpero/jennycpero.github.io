@@ -4,20 +4,28 @@
 <!DOCTYPE html> 
 <html lang ="en">
     <head>
-        <title>Jenny Pero</title>
+        <title>Jenny Pero - Home</title>
         <link rel="stylesheet" href="style.css">
         <script src="jcp.js"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--for bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
         <link rel="icon" href="assets/JPlogo.png" type="image/icon type">
+
+        <!--Social media icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+
     </head>
 
-    <body>
+    <body class="d-flex flex-column min-vh-100">
         <nav class="navbar navbar-expand-sm fixed-top navbar-dark p-1">
             <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -63,26 +71,36 @@
                         <div class="col-md my-auto">
                             <div class="d-block">
                                 <div id="hi">Hello, I'm Jenny!</div>
-                                <div id="about-me">I’m a Wichita Student University student majoring in Computer Science, with a certificate in Geographic Information Systems (GIS).
+                                <div id="about-me">I’m a Wichita State University student majoring in Computer Science, with a certificate in Geographic Information Systems (GIS). 
                                 <br><br>There are a few careers that I may consider pursuing, such as data analytics or technical writing, but right now I'm taking the time to explore all my options.</div>
                             </div>
                         </div>
                     </div>
                 </div>
         </section>
+        
         <!--Portfolio-->
         <section id="portfolio">
             <div class="container-fluid">
                 <div id="port">Portfolio</div>
-                <p>Click on any of the following categories to view some of cool projects!</p>                
+                <p>I created this website from scratch using HTML and CSS, and am hosting it through InfinityFree. To view some of my other cool projects, click on any following categories below!</p>             
                 <div class="projects">
                     <a id="proj" href="DAproj.html">Data Analytics</a>
                     <a id="proj" href="TWproj.html">Technical Writing</a>
                     <a id="proj" href="Progproj.html">Other Projects</a>
                 </div>
-                <p>This website is also part of my portfolio, as I made it myself from scratch, hosting it via InfinityFree</p>
             </div>
         </section>
+
+        <!--Footer-->
+        <div class="container-fluid connect" style="background-color:#611c31">
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/jennifer-pero/" class="fa fa-linkedin"></a>
+                <a href="https://github.com/jennycpero" class="fa fa-github"></a>
+                <a href="mailto:jennycpero@gmail.com#" class="fa fa-envelope"></a>
+            </div>
+            <p style="font-weight:bold">Stay Connected</p>
+        </div>
     </body>
 
 </html>
