@@ -64,18 +64,31 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     border: 0px;
 }
 
 #hero-section {
     margin-right: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 5%;
 }
 
 #hero-head {
     font-size: 6em;
     font-weight: bold;
-    color:#FF87B9;
+    background: linear-gradient(to right, #FF87B9, #E7AAFF, #99A4FF 75%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* color:#FF87B9; */
+    text-align: left;
+}
+
+#hero-text {
+    font-size: 3em;
     text-align: left;
 }
 
@@ -85,16 +98,6 @@ body {
     animation: fadein 1s;
     /* background: linear-gradient(25deg, #845ec2 25%, #d65db1 75%, #ff6f91); */
     background: #202020;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    padding-left:10%;
-}
-
-p {
-    font-size: 2em;
-    text-align: left;
 }
 
 @keyframes fadein {
@@ -107,17 +110,18 @@ button {
     color: white;
     border-color: white !important;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-    padding: 5px 50px;
-    border-radius: 4px !important;
+    border-radius: 50px !important;
     text-align: center;
     font-size: 20px !important;
     font-weight: bold;
-    margin-right: 3% !important;
 }
 
 #resume-btn {
-    border-color:#E7AAFF !important;
-    color:#E7AAFF !important;
+    border-color: none !important;
+    background-color: linear-gradient(to right, #FF87B9, #E7AAFF, #99A4FF 75%) !important;
+    width: 30%;
+    /*border-color:#E7AAFF !important;
+    color:#E7AAFF !important; */
 }
 
 #resume-btn:hover {
@@ -125,11 +129,6 @@ button {
     color: black !important;
     border-color: #101010 !important;
     transition: .3s;
-}
-
-#contact-btn {
-    border-color: #99a4ff !important;
-    color:#99A4FF !important
 }
 
 #contact-btn:hover {
@@ -154,18 +153,28 @@ h3 {
     text-align: center;
 }
 
-/* Screen Responsiveness */
+/* Screen Responsiveness 
 
-@media (max-width: 480px) {
+    320px — 480px: Mobile devices
+    481px — 768px: iPads, Tablets
+    769px — 1024px: Small screens, laptops
+    1025px — 1200px: Desktops, large screens
+    1201px and more —  Extra large screens, TV
+
+*/
+
+@media screen and (max-width: 480px) {
     #hero-home {
         justify-content: center;
         align-items: center;
-        padding: 0;
+        padding-left: 0;
     }
 
     #hero-section {
+        justify-content: center;
+        align-items: center;
         margin-right: 0;
-        padding: 3%;
+        margin-left: 0;
     }
     
     #hero-head {
@@ -174,7 +183,37 @@ h3 {
     }
 
     #hero-text {
-        font-size: 1.2em;
+        font-size: 1.25em;
+        text-align: center;
+    }
+
+    #resume-btn {
+        font-size: 15px !important;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #hero-section {
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    #hero-home {
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    #hero-head {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    #hero-text {
+        font-size: 1.5em;
         text-align: center;
     }
 
@@ -183,27 +222,30 @@ h3 {
         margin-top: 0%;
         margin-bottom: 3%;
     }
+}
 
-    #contact-btn {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #hero-head {
+        font-size: 4em;
+    }
+
+    #hero-text {
+        font-size: 2em;
+    }
+
+    #resume-btn {
         font-size: 15px !important;
+        margin-top: 0%;
+        margin-bottom: 3%;
     }
-
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
     #hero-head {
+        font-size: 5em;
+    }
+
+    #hero-text {
         font-size: 2.5em;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    #hero-head {
-        font-size: 4.5em;
-    }
-}
-
-@media (min-width: 1025px) and (max-width: 1200px) {
-    #hero-head {
-        font-size: 6em;
     }
 }
