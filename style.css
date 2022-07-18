@@ -22,11 +22,7 @@ body {
 }
 
 .navbar-brand:hover {
-    background: white;
-    background: linear-gradient(to right, #FF87B9, #E7AAFF, #99A4FF);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #E7AAFF !important;
     transition: .3s;
 }
 
@@ -69,7 +65,7 @@ body {
 }
 
 #hero-section {
-    margin-right: 25%;
+    margin-right: 20%;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -79,10 +75,12 @@ body {
 #hero-head {
     font-size: 6em;
     font-weight: bold;
-    background: linear-gradient(to right, #FF87B9, #E7AAFF, #99A4FF 75%);
+    color: #E7AAFF;
+    /*background: linear-gradient(to right, #FF87B9, #E7AAFF, #99A4FF 75%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    /*
     /* color:#FF87B9; */
     text-align: left;
 }
@@ -106,8 +104,6 @@ body {
 }
 
 button {
-    background-color: #101010;
-    color: white;
     border-color: white !important;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     border-radius: 50px !important;
@@ -117,26 +113,63 @@ button {
 }
 
 #resume-btn {
-    border-color: none !important;
-    background-color: linear-gradient(to right, #FF87B9, #E7AAFF, #99A4FF 75%) !important;
+    background-color: #101010;
+    border-color:white;
     width: 30%;
+    text-decoration: none;
+    color: white;
+    border-width: 3px;
+    margin-top: 2%;
     /*border-color:#E7AAFF !important;
     color:#E7AAFF !important; */
 }
 
 #resume-btn:hover {
-    background-color: #E7AAFF !important;
-    color: black !important;
+    color: #101010 !important;
+    background-color: #E7AAFF;
     border-color: #101010 !important;
     transition: .3s;
 }
 
-#contact-btn:hover {
-    background-color: #99A4FF !important;
-    color: black !important;
-    border-color: #101010 !important;
-    transition: .3s;
+
+/* About */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 5%;
 }
+
+#my-pic {
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#about-title {
+    color:#E7AAFF;
+    margin-top: 1%;
+    font-weight: bold;
+}
+
+#about-desc {
+    text-align: left !important;
+    margin: 1% 2% 0 2%;
+    font-size: 1.4em;
+}
+
+/* Experience */
+.exp-proj-title {
+    font-size: 5em;
+    color: #E7AAFF;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+/* Projects /*
 
 /* Footer */
 
@@ -151,6 +184,10 @@ h3 {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}
+
+#host-credit {
+    opacity: 70%;
 }
 
 /* Screen Responsiveness 
@@ -189,6 +226,17 @@ h3 {
 
     #resume-btn {
         font-size: 15px !important;
+        width: 50%;
+    }
+
+    #my-pic {
+        width: 50%;
+        height: auto;
+    }
+
+    #about-desc {
+        text-align: center;
+        font-size: 1em;
     }
 
 }
@@ -221,6 +269,16 @@ h3 {
         font-size: 15px !important;
         margin-top: 0%;
         margin-bottom: 3%;
+        width: 40%;
+    }
+
+    #my-pic {
+        width: 45%;
+        height: auto;
+    }
+
+    #about-desc{
+        font-size: 1em;
     }
 }
 
@@ -238,6 +296,15 @@ h3 {
         margin-top: 0%;
         margin-bottom: 3%;
     }
+
+    #my-pic {
+        width: 25%;
+        height: auto;
+    }
+
+    #about-desc {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
@@ -247,5 +314,14 @@ h3 {
 
     #hero-text {
         font-size: 2.5em;
+    }
+
+    #my-pic {
+        width: 25%;
+        height: auto;
+    }
+
+    #about-desc {
+        font-size: 1.2em;
     }
 }
