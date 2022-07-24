@@ -27,7 +27,7 @@ body {
 }
 
 .nav-link {
-    font-size: 1.2em;
+    font-size: 1em;
     color: white !important;
     position: relative;
     text-decoration: none;
@@ -158,18 +158,98 @@ button {
 #about-desc {
     text-align: left !important;
     margin: 1% 2% 0 2%;
-    font-size: 1.4em;
+    font-size: 1.2em;
+    padding: 0 10% 0 10%;
 }
 
 /* Experience */
 .exp-proj-title {
-    font-size: 5em;
+    font-size: 4em;
     color: #E7AAFF;
     font-weight: bold;
     margin-bottom: 2%;
 }
 
-/* Projects /*
+#ennovar-exp {
+    display: flex;
+    flex-direction: column;
+    /* padding: 1% 10% 0 10%; */
+    align-items: left;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+h2 {
+    font-weight: bold !important;
+    text-align: left !important;
+}
+
+.exp {
+    font-size: 1.5em;
+}
+
+.exp-date {
+    font-style: italic;
+    font-size: 1.25em;
+}
+
+ul li {
+    font-size: 1.25em !important;
+}
+
+.position-title {
+    font-weight: bold;
+}
+
+/* Projects */
+.filter-section {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    margin-top: 1%;
+}
+
+.filter-btn {
+    color: white !important;
+    border-radius: 0 !important;
+    background-color: #101010;
+    padding: 7%;
+    font-size: 1.2em !important;
+}
+
+.all-projects {
+    margin: 3% 10% 5% 10%;
+}
+
+.proj {
+    background-color: white;
+    width: 30%;
+    height: auto;
+    color: black;
+}
+
+#test-pic {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.proj-title {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.proj-text {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Footer */
 
@@ -188,6 +268,30 @@ h3 {
 
 #host-credit {
     opacity: 70%;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2%;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.fa {
+    text-decoration: none !important;
+    color: black !important;
+    background-color: white !important;
+    border-radius: 50% !important;
+    padding: 20%;
+    font-size: 1.5em !important;
+    margin: 10% 20% 10% 20%;
+}
+
+.fa:hover {
+    background-color: #E7AAFF !important;
+    transition: .3s;
 }
 
 /* Screen Responsiveness 
@@ -239,6 +343,30 @@ h3 {
         font-size: 1em;
     }
 
+    h3 {
+        font-size: 1.3em !important;
+    }
+
+    .exp-proj-title {
+        font-size: 2.5em;
+    }
+
+    #ennovar-exp {
+        padding: 1% 5% 0 5%;
+    }
+
+    h2 {
+        font-size: 1.4em !important;
+    }
+
+    .exp-date {
+        font-size: 1em;
+    }
+
+    ul li {
+        font-size: 1em !important;
+    }
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -280,6 +408,19 @@ h3 {
     #about-desc{
         font-size: 1em;
     }
+
+    .exp-proj-title {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    ul li{
+        font-size: 1em !important;
+    }
+
+    #ennovar-exp {
+        padding: 1% 5% 0 5%;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -305,6 +446,18 @@ h3 {
     #about-desc {
         font-size: 1.2em;
     }
+
+    ul li {
+        font-size: 1.2em !important;
+    }
+
+    .exp-proj-title {
+        font-size: 4em;
+    }
+
+    #ennovar-exp {
+        padding: 1% 5% 0 5%;
+    }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
@@ -317,11 +470,15 @@ h3 {
     }
 
     #my-pic {
-        width: 25%;
+        width: 20%;
         height: auto;
     }
 
     #about-desc {
         font-size: 1.2em;
+    }
+
+    .exp-proj-title {
+        font-size: 5em;
     }
 }
