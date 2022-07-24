@@ -54,11 +54,12 @@
             </div>
         </nav>
 
+        <!--Home/Hero-Section-->
         <div class="container-fluid" id="hero-home">
             <div id="hero-section">
                 <div id="hero-head">Hi, I'm Jenny!</div>
                 <p id="hero-text">Aspiring data analyst and technical writer.</p>
-                <button id="resume-btn">Download Resume</button>
+                <a id="resume" href="assets/Resume - Jennifer Pero.pdf" download>Download Resume</a>
             </div>                
         </div>
 
@@ -74,7 +75,7 @@
         </div>
 
         <!--Experience-->
-        <div class="container-fluid my-4 py-5" id="experience">
+        <div class="container-fluid my-4 p-5" id="experience">
             <h1 class="exp-proj-title">Experience</h1>
             <div id="ennovar-exp">
                 <h2>Student Contractor - Ennovar</h2>
@@ -98,57 +99,46 @@
         </div>
 
         <!--Projects-->
-        <div class="container-fluid my-3" id="projects">
+        <div class="container-fluid my-5" id="projects">
             <h1 class="exp-proj-title">Projects</h1>
-            <div class="filter-section">
-                <div class="dropdown">
-                    <button href="#" class="filter-btn dropdown-toggle" data-bs-toggle="dropdown">Category</button>
-                    <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Data Analytics</a>
-                        <a href="#" class="dropdown-item">Technical Writing</a>
-                        <a href="#" class="dropdown-item">Other</a>
+               <div class="all-projects">
+                    <div class="proj">
+                        <img src="assets/portfolio-web.png" class="proj-pic">
+                        <div class="proj-text html css other">
+                            <h2 class="proj-title">Portfolio Website</h2>
+                            <p>Hey, it's my website! A simple static portfolio website.</p>
+                            <button class="repo-btn" onclick="location.href='https://github.com/jennycpero/Portfolio-Website'">View GitHub Repo</button>
+                        </div>
                     </div>
-                </div>
 
-                <div class="dropdown">
-                    <button href="#" class="filter-btn dropdown-toggle" data-bs-toggle="dropdown">Languages</button>
-                    <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">HTML/CSS</a>
-                        <a href="#" class="dropdown-item">Python</a>
-                        <a href="#" class="dropdown-item">JavaScript</a>
+                    <div class="proj">
+                        <img src="assets/total-pic.png" class="proj-pic">
+                        <div class="proj-text python other">
+                            <h2 class="proj-title">Total</h2>
+                            <p>A console-style arithmetic game programmed in Python.</p>
+                            <button class="repo-btn" onclick="location.href='https://github.com/jennycpero/Total'">View GitHub Repo</button>
+                        </div>
                     </div>
-                </div>
 
-                <div class="dropdown">
-                    <button href="#" class="filter-btn dropdown-toggle" data-bs-toggle="dropdown">Libraries</button>
-                    <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">BeautifulSoup</a>
-                        <a href="#" class="dropdown-item">Boostrap</a>
-                        <a href="#" class="dropdown-item">Pandas</a>
+                    <div class="proj">
+                        <img src="assets/popeyes-pic.png" class="proj-pic">
+                        <div class="proj-text python beautiful-soup pandas da">
+                            <h2 class="proj-title">Popeyes Locations Scraper</h2>
+                            <p>Web scrapes US Popeyes locations and compiles it into a csv file.</p>
+                            <button class="repo-btn" onclick="location.href='https://github.com/jennycpero/Popeyes-Locations'">View GitHub Repo</button>
+                        </div>
                     </div>
-                </div>
             </div>
 
-            <div class="all-projects">
-                <div class="proj">
-                    <img src="assets/webidea1.png" id="test-pic">
-                    <div class="proj-text">
-                        <h2 class="proj-title">Title</h2>
-                        <p>Insert short description about project here</p>
-                        <button>View GitHub Repo</button>
-                        <p>Tagged: Category, Language, Library</p>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!--Footer -->
         <div class="navbar navbar-expand-lg p-3" id="contact">
             <h3>Like what you see? Then connect with me.</h3>
             <div class="socials">
-                <a tag="LinkedIn" href="https://www.linkedin.com/in/jennifer-pero/" target="_blank" class="fa fa-linkedin"></a>
-                <a tag="GitHub" href="https://github.com/jennycpero" target="_blank" class="fa fa-github"></a>
-                <a tag="Email" href="mailto:jennycpero@gmail.com#" target="_blank" class="fa fa-envelope"></a>
+                <a tag="LinkedIn" title="LinkedIn" href="https://www.linkedin.com/in/jennifer-pero/" target="_blank" class="fa fa-linkedin"></a>
+                <a tag="GitHub" title="GitHub" href="https://github.com/jennycpero" target="_blank" class="fa fa-github"></a>
+                <a tag="Email" title="Email" href="mailto:jennycpero@gmail.com#" target="_blank" class="fa fa-envelope"></a>
             </div>
             <p id="host-credit">This website is hosted by Infinity Free.</p>
         </div>

@@ -112,7 +112,7 @@ button {
     font-weight: bold;
 }
 
-#resume-btn {
+#resume {
     background-color: #101010;
     border-color:white;
     width: 30%;
@@ -120,11 +120,14 @@ button {
     color: white;
     border-width: 3px;
     margin-top: 2%;
-    /*border-color:#E7AAFF !important;
-    color:#E7AAFF !important; */
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border: 3px solid white;
+    padding: .5%;
 }
 
-#resume-btn:hover {
+#resume:hover {
     color: #101010 !important;
     background-color: #E7AAFF;
     border-color: #101010 !important;
@@ -210,7 +213,6 @@ ul li {
     width: 100%;
     height: auto;
     justify-content: space-around;
-    margin-top: 1%;
 }
 
 .filter-btn {
@@ -219,10 +221,15 @@ ul li {
     background-color: #101010;
     padding: 7%;
     font-size: 1.2em !important;
+    margin-right: 10% !important;
 }
 
 .all-projects {
     margin: 3% 10% 5% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .proj {
@@ -230,12 +237,12 @@ ul li {
     width: 30%;
     height: auto;
     color: black;
+    padding-bottom: 1%;
 }
 
-#test-pic {
+.proj-pic {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 50%;
 }
 
 .proj-title {
@@ -249,6 +256,28 @@ ul li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+}
+
+.repo-btn {
+    background-color: #101010;
+    color: white;
+    border-radius: 5%;
+    padding: 2% 20% 2% 20%;
+    font-size: 1em !important;
+}
+
+.repo-btn:hover {
+    background-color: #E7AAFF;
+    color: black;
+    transition: .3s;
+}
+
+.tagged {
+    opacity: 50%;
+    text-align: left;
+    font-size: .75em;
+    padding-left: 1%;
 }
 
 /* Footer */
@@ -328,9 +357,9 @@ h3 {
         text-align: center;
     }
 
-    #resume-btn {
-        font-size: 15px !important;
-        width: 50%;
+    #resume {
+        font-size: 1em !important;
+        width: 75% !important;
     }
 
     #my-pic {
@@ -367,6 +396,33 @@ h3 {
         font-size: 1em !important;
     }
 
+    .all-projects {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .proj-title {
+        text-align: center;
+        font-size: 1em !important;
+    }
+
+    p {
+        font-size: .9em !important;
+    }
+
+    .proj {
+        width: 90%;
+        height: 100%;
+        margin-bottom: 10%;
+        padding-bottom: 10%;
+    }
+
+    .repo-btn {
+        object-fit: contain;
+    }
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -393,11 +449,11 @@ h3 {
         text-align: center;
     }
 
-    #resume-btn {
+    #resume {
         font-size: 15px !important;
         margin-top: 0%;
         margin-bottom: 3%;
-        width: 40%;
+        width: 80%;
     }
 
     #my-pic {
@@ -421,6 +477,33 @@ h3 {
     #ennovar-exp {
         padding: 1% 5% 0 5%;
     }
+
+    .all-projects {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .proj-title {
+        text-align: center;
+        font-size: 1em !important;
+    }
+
+    p {
+        font-size: .9em !important;
+    }
+
+    .proj {
+        width: 90%;
+        height: 100%;
+        margin-bottom: 5%;
+        padding-bottom: 10%;
+    }
+
+    .repo-btn {
+        object-fit: contain;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -429,13 +512,14 @@ h3 {
     }
 
     #hero-text {
-        font-size: 2em;
+        font-size: 1.5em !important;
     }
 
-    #resume-btn {
+    #resume {
         font-size: 15px !important;
         margin-top: 0%;
         margin-bottom: 3%;
+        width: 50%;
     }
 
     #my-pic {
@@ -458,6 +542,32 @@ h3 {
     #ennovar-exp {
         padding: 1% 5% 0 5%;
     }
+
+    .all-projects {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .proj-title {
+        text-align: center;
+        font-size: 1em !important;
+    }
+
+    p {
+        font-size: .9em !important;
+    }
+
+    .proj {
+        width: 60%;
+        margin-bottom: 5%;
+        padding-bottom: 5%;
+    }
+
+    .repo-btn {
+        object-fit: contain;
+    }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
@@ -466,7 +576,7 @@ h3 {
     }
 
     #hero-text {
-        font-size: 2.5em;
+        font-size: 2.5em !important;
     }
 
     #my-pic {
@@ -480,5 +590,31 @@ h3 {
 
     .exp-proj-title {
         font-size: 5em;
+    }
+
+    .all-projects {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .proj-title {
+        text-align: center;
+        font-size: 1em !important;
+    }
+
+    p {
+        font-size: .9em !important;
+    }
+
+    .proj {
+        width: 40%;
+        margin-bottom: 5%;
+        padding-bottom: 3%;
+    }
+
+    .repo-btn {
+        object-fit: contain;
     }
 }
