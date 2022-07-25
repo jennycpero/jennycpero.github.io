@@ -1,0 +1,30 @@
+<!--
+            <div class="filter-section">
+                <div class="dropdown">
+                    <button href="#" class="filter-btn dropdown-toggle" data-bs-toggle="dropdown">Category</button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Data Analytics</a>
+                        <a href="#" class="dropdown-item">Technical Writing</a>
+                        <a href="#" class="dropdown-item">Other</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button href="#" class="filter-btn dropdown-toggle" data-bs-toggle="dropdown">Languages</button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">HTML/CSS</a>
+                        <a href="#" class="dropdown-item">Python</a>
+                        <a href="#" class="dropdown-item">JavaScript</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button href="#" class="filter-btn dropdown-toggle" data-bs-toggle="dropdown">Libraries</button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">BeautifulSoup</a>
+                        <a href="#" class="dropdown-item">Boostrap</a>
+                        <a href="#" class="dropdown-item">Pandas</a>
+                    </div>
+                </div>
+            </div>
+        -->
