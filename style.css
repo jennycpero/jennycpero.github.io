@@ -150,8 +150,8 @@ button {
     align-items: center;
     justify-content: center;
     text-align: left;
-    padding: 2%;
-
+    padding: 5%;
+    margin-bottom:5%;
 }
 
 #my-pic {
@@ -176,6 +176,7 @@ button {
 #experience {
     padding-left: 10% !important;  
     padding-right: 10% !important;
+    margin-bottom: 5% !important;
 }
 
 .exp-title {
@@ -187,6 +188,7 @@ button {
     font-size: 4em;
     color: #E7AAFF;
     font-weight: bold;
+    margin-bottom: 1% !important;
 }
 
 #ennovar-exp {
@@ -194,6 +196,7 @@ button {
     flex-direction: column;
     align-items: left;
     justify-content: center;
+    padding: 0 10% 0 10%;
 }
 
 h2 {
