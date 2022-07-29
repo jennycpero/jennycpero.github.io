@@ -134,6 +134,13 @@ button {
     transition: .3s;
 }
 
+/* Anchor Span */
+.anchor {
+    display: block;
+    height: 50px;
+    margin-top: -50px;
+    visibility:hidden;
+}
 
 /* About */
 
@@ -144,61 +151,68 @@ button {
     justify-content: center;
     text-align: left;
     padding: 5%;
+    margin-bottom:5%;
 }
 
 #my-pic {
-    width: 20%;
+    width: 15% !important;
     height: auto;
     border-radius: 50%;
 }
 
 #about-title {
     color:#E7AAFF;
-    margin-top: 1%;
     font-weight: bold;
 }
 
 #about-desc {
     text-align: left !important;
-    margin: 1% 2% 0 2%;
+    margin: 0 2% 0 2%;
     font-size: 1.2em;
     padding: 0 10% 0 10%;
 }
 
 /* Experience */
+#experience {
+    padding-left: 10% !important;  
+    padding-right: 10% !important;
+    margin-bottom: 5% !important;
+}
+
+.exp-title {
+    font-size:1.5em !important;
+    text-align: left !important;
+}
+
 .exp-proj-title {
     font-size: 4em;
     color: #E7AAFF;
     font-weight: bold;
-    margin-bottom: 2%;
+    margin-bottom: 1% !important;
 }
 
 #ennovar-exp {
     display: flex;
     flex-direction: column;
-    /* padding: 1% 10% 0 10%; */
     align-items: left;
     justify-content: center;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 10% 0 10%;
 }
 
 h2 {
     font-weight: bold !important;
     text-align: left !important;
-}
-
-.exp {
-    font-size: 1.5em;
+    font-size: 1.2em !important;
+    text-align: center !important;
 }
 
 .exp-date {
     font-style: italic;
-    font-size: 1.25em;
+    font-size: 1.2em;
 }
 
 ul li {
-    font-size: 1.25em !important;
+    font-size: 1.1em !important;
 }
 
 .position-title {
@@ -206,23 +220,6 @@ ul li {
 }
 
 /* Projects */
-.filter-section {
-    display:flex;
-    flex-direction: row;
-    flex-wrap:nowrap;
-    width: 100%;
-    height: auto;
-    justify-content: space-around;
-}
-
-.filter-btn {
-    color: white !important;
-    border-radius: 0 !important;
-    background-color: #101010;
-    padding: 7%;
-    font-size: 1.2em !important;
-    margin-right: 10% !important;
-}
 
 .all-projects {
     margin: 3% 10% 5% 10%;
@@ -237,7 +234,6 @@ ul li {
     width: 30%;
     height: auto;
     color: black;
-    padding-bottom: 1%;
 }
 
 .proj-pic {
@@ -293,6 +289,7 @@ h3 {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    margin-top: 1% !important;
 }
 
 #host-credit {
@@ -332,6 +329,18 @@ h3 {
 */
 
 @media screen and (max-width: 480px) {
+    #about {
+        height: auto;
+    }
+
+    #experience {
+        height: auto;
+    }
+
+    #projects {
+        height: auto;
+    }
+
     #hero-home {
         justify-content: center;
         align-items: center;
@@ -351,23 +360,23 @@ h3 {
     }
 
     #hero-text {
-        font-size: 1.25em;
+        font-size: 1.25em !important;
         text-align: center;
     }
 
     #resume {
         font-size: 1em !important;
-        width: 75% !important;
+        width: 50% !important;
     }
 
     #my-pic {
-        width: 50%;
+        width: 40% !important;
         height: auto;
     }
 
     #about-desc {
         text-align: center;
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     h3 {
@@ -460,7 +469,7 @@ h3 {
     }
 
     #hero-text {
-        font-size: 1.5em;
+        font-size: 1.5em !important;
         text-align: center;
     }
 
@@ -472,12 +481,12 @@ h3 {
     }
 
     #my-pic {
-        width: 45%;
+        width: 30% !important;
         height: auto;
     }
 
     #about-desc{
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
     .exp-proj-title {
@@ -530,6 +539,10 @@ h3 {
     h3 {
         font-size: 1.2em !important
     }
+
+    #resume {
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -549,7 +562,7 @@ h3 {
     }
 
     #my-pic {
-        width: 25%;
+        width: 25% !important;
         height: auto;
     }
 
