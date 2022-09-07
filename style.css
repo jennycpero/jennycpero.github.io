@@ -188,7 +188,7 @@ button {
     font-size: 4em;
     color: #E7AAFF;
     font-weight: bold;
-    margin-bottom: 1% !important;
+    margin-bottom: 2% !important;
 }
 
 #ennovar-exp {
@@ -204,6 +204,8 @@ h2 {
     text-align: left !important;
     font-size: 1.2em !important;
     text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .exp-date {
@@ -224,7 +226,6 @@ ul li {
 .all-projects {
     margin: 3% 10% 5% 10%;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -234,6 +235,7 @@ ul li {
     width: 30%;
     height: auto;
     color: black;
+    margin-bottom: 5%;
 }
 
 .proj-pic {
@@ -244,21 +246,23 @@ ul li {
 .proj-title {
     font-size: 1.2em;
     text-align: center;
+    margin-top: 2% !important;
+    font-weight: bold;
 }
 
 .proj-text {
     padding: 5%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 .repo-btn {
     background-color: #101010;
     color: white;
-    padding: 2% 20% 2% 20%;
+    padding: 0 15% 2% 15%;
+    margin-bottom: 5%;
     font-size: 1em !important;
     text-decoration: none;
     font-weight: bold;
@@ -268,13 +272,6 @@ ul li {
     background-color: #E7AAFF;
     color: black;
     transition: .3s;
-}
-
-.tagged {
-    opacity: 50%;
-    text-align: left;
-    font-size: .75em;
-    padding-left: 1%;
 }
 
 /* Footer */
@@ -392,7 +389,8 @@ h3 {
     }
 
     h2 {
-        font-size: 1.4em !important;
+        font-size: 1em !important;
+        margin: 2% !important;
     }
 
     .exp-date {
@@ -410,6 +408,13 @@ h3 {
         flex-wrap: wrap;
     }
 
+    .proj {
+        width: 90%;
+        height: 100%;
+        margin-bottom: 5%;
+        padding-bottom: 10%;
+    }
+
     .proj-title {
         text-align: center;
         font-size: 1em !important;
@@ -417,17 +422,6 @@ h3 {
 
     p {
         font-size: .9em !important;
-    }
-
-    .proj {
-        width: 90%;
-        height: 100%;
-        margin-bottom: 10%;
-        padding-bottom: 10%;
-    }
-
-    .repo-btn {
-        object-fit: contain;
     }
 
     .fa {
@@ -509,6 +503,13 @@ h3 {
         flex-wrap: wrap;
     }
 
+    .proj {
+        width: 90%;
+        height: 100%;
+        margin-bottom: 5%;
+        padding-bottom: 5%;
+    }
+
     .proj-title {
         text-align: center;
         font-size: 1em !important;
@@ -516,13 +517,6 @@ h3 {
 
     p {
         font-size: .9em !important;
-    }
-
-    .proj {
-        width: 90%;
-        height: 100%;
-        margin-bottom: 5%;
-        padding-bottom: 10%;
     }
 
     .repo-btn {
@@ -582,6 +576,12 @@ h3 {
         padding: 1% 5% 0 5%;
     }
 
+    .proj {
+        width: 60%;
+        height: 100%;
+        padding-bottom: 2%;
+    }
+
     .all-projects {
         flex-direction: column;
         justify-content: center;
@@ -596,12 +596,6 @@ h3 {
 
     p {
         font-size: .9em !important;
-    }
-
-    .proj {
-        width: 60%;
-        margin-bottom: 5%;
-        padding-bottom: 5%;
     }
 
     .repo-btn {
@@ -648,9 +642,8 @@ h3 {
     }
 
     .proj {
-        width: 40%;
-        margin-bottom: 5%;
-        padding-bottom: 3%;
+        width: 60%;
+        height: 100%;
     }
 
     .repo-btn {
