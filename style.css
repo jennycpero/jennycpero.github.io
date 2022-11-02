@@ -653,3 +653,10 @@ h3 {
         object-fit: contain;
     }
 }
+
+/* UX Writing Samples temp class */
+.UXsamples {
+    width:auto;
+    height:75%;
+    margin: 4% 0;
+}
