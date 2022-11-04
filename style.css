@@ -223,23 +223,26 @@ ul li {
 
 /* Projects */
 
-.all-projects {
-    margin: 3% 10% 5% 10%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 .proj {
     background-color: white;
     width: 30%;
+    height:30%;
     color: black;
-    object-fit: contain;
+    margin: 2% 0;
+}
+
+.proj-pic-main {
+    width:100%;
+    height:50%;
 }
 
 .proj-pic {
     width: 100%;
-    height: 50%;
+    height: auto;
+}
+
+.proj-text-main {
+    height:auto;
 }
 
 .proj-title {
@@ -250,18 +253,17 @@ ul li {
 }
 
 .proj-text {
-    padding: 5%;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    padding: 2%;
 }
 
 .repo-btn {
     background-color: #101010;
     color: white;
-    padding: 1% 10%;
-    margin-bottom: 3%;
+    padding: 1% 5%;
     font-size: 1em !important;
     text-decoration: none;
     font-weight: bold;
