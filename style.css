@@ -223,32 +223,41 @@ ul li {
 
 /* Projects */
 
+.all-projects {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 1rem;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
 .proj {
     background-color: white;
-    width: 30%;
-    height:30%;
     color: black;
-    margin: 2% 0;
 }
 
 .proj-pic-main {
     width:100%;
-    height:50%;
+    height:auto;
 }
 
 .proj-pic {
     width: 100%;
-    height: auto;
+    height: 50%;
+    object-fit: cover;
 }
 
 .proj-text-main {
     height:auto;
+    padding: 4%;
 }
 
 .proj-title {
     font-size: 1.2em;
     text-align: center;
-    margin-top: 2% !important;
     font-weight: bold;
 }
 
@@ -257,7 +266,6 @@ ul li {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding: 2%;
 }
 
 .repo-btn {
@@ -405,17 +413,9 @@ h3 {
     }
 
     .all-projects {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .proj {
-        width: 90%;
-        height: 100%;
-        margin-bottom: 5%;
-        padding-bottom: 10%;
+        display: grid;
+        grid-template-columns: 85%;
+        grid-gap: 1rem;
     }
 
     .proj-title {
@@ -500,17 +500,9 @@ h3 {
     }
 
     .all-projects {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .proj {
-        width: 90%;
-        height: 100%;
-        margin-bottom: 5%;
-        padding-bottom: 5%;
+        display: grid;
+        grid-template-columns: 85%;
+        grid-gap: 1rem;
     }
 
     .proj-title {
@@ -579,18 +571,10 @@ h3 {
         padding: 1% 5% 0 5%;
     }
 
-    .proj {
-        width: 60%;
-        height: 100%;
-        padding-bottom: 2%;
-        margin-bottom: 5%;
-    }
-
     .all-projects {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-gap: 1rem;
     }
 
     .proj-title {
@@ -630,10 +614,7 @@ h3 {
     }
 
     .all-projects {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+        display: grid;
     }
 
     .proj-title {
@@ -646,14 +627,10 @@ h3 {
     }
 
     .proj {
-        width: 60%;
+        width: auto;
         height: 100%;
-        margin-bottom: 5%;
     }
 
-    .repo-btn {
-        object-fit: contain;
-    }
 }
 
 /* UX Writing Samples temp class */
