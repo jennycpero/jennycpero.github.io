@@ -326,6 +326,13 @@ h3 {
     transition: .3s;
 }
 
+/* UX Writing Samples temp class */
+.UXsamples {
+    width:auto;
+    height:75%;
+    margin: 4% 0;
+}
+
 /* Screen Responsiveness 
 
     320px — 480px: Mobile devices
@@ -631,11 +638,4 @@ h3 {
         height: 100%;
     }
 
-}
-
-/* UX Writing Samples temp class */
-.UXsamples {
-    width:auto;
-    height:75%;
-    margin: 4% 0;
 }
