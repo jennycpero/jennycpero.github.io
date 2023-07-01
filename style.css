@@ -1,33 +1,26 @@
 html, body {
     height: 100%;
     width: auto;
+    font-family: 'Segoe UI','Arial','sans-serif';
 }
 
 body {
-    background-color:#202020;
     color: white !important;
     width: auto;
+    background: rgb(21,0,53);
+    background: linear-gradient(90deg, rgba(38,8,84,1) 0%, rgba(79,18,112,1) 55%, rgba(46,13,63,1) 86%); 
 }
 
 /* Top Navbar */
 
 .navbar {
-    background-color: #101010 !important;
     margin-bottom: 0 !important;
-}
-
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.5em !important;
-}
-
-.navbar-brand:hover {
-    color: #E7AAFF !important;
-    transition: .3s;
 }
 
 .nav-link {
     font-size: 1em;
+    font-weight: bold;
+    text-align: center;
     color: white !important;
     position: relative;
     text-decoration: none;
@@ -60,33 +53,29 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     border: 0px;
 }
 
 #hero-section {
-    margin-right: 20%;
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin-left: 5%;
 }
 
-#hero-head {
+/* UX writing: Sugue UI, Arial, sans-serif
+Technical writing: Georgia, Times New Roman
+Data analytics: Lucida Console
+*/
+
+#hero-header {
     font-size: 6em;
     font-weight: bold;
-    color: #E7AAFF;
-    /*background: linear-gradient(to right, #FF87B9, #E7AAFF, #99A4FF 75%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /*
-    /* color:#FF87B9; */
     text-align: left;
 }
 
 #hero-text {
-    font-size: 3em;
+    font-size: 2em;
     text-align: left;
 }
 
@@ -95,7 +84,6 @@ body {
     width: auto;
     animation: fadein 1s;
     /* background: linear-gradient(25deg, #845ec2 25%, #d65db1 75%, #ff6f91); */
-    background: #202020;
 }
 
 @keyframes fadein {
@@ -152,7 +140,6 @@ button {
     text-align: left;
     padding: 5%;
     margin-bottom:5%;
-    background-color:#202020;
 }
 
 #my-pic {
@@ -178,8 +165,6 @@ button {
     padding-left: 10% !important;  
     padding-right: 10% !important;
     margin-bottom: 5% !important;
-    background-color:#202020;
-
 }
 
 .exp-title {
@@ -225,9 +210,6 @@ ul li {
 }
 
 /* Projects */
-#projects {
-    background-color:#202020;
-}
 
 .all-projects {
     display: grid;
@@ -299,9 +281,8 @@ ul li {
     justify-content: center;
 }
 
-h3 {
+h4 {
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-top: 1% !important;
 }
@@ -370,7 +351,7 @@ h1 {
 */
 
 @media screen and (max-width: 480px) {
-    #about {
+    #abot {
         height: auto;
     }
 
@@ -395,7 +376,7 @@ h1 {
         margin-left: 0;
     }
     
-    #hero-head {
+    #hero-header {
         font-size: 2.5em;
         text-align: center;
     }
@@ -493,7 +474,7 @@ h1 {
         padding-left: 0;
     }
 
-    #hero-head {
+    #hero-header {
         font-size: 3em;
         text-align: center;
     }
@@ -568,7 +549,7 @@ h1 {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    #hero-head {
+    #hero-header {
         font-size: 4em;
     }
 
