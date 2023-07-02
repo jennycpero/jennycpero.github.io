@@ -28,29 +28,34 @@
 
     <body>
         <!--Navigation-->
-        <nav class="navbar navbar-expand-md navbar-dark px-3">            
-            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div id="hero-home">
+            <nav class="navbar navbar-expand-md navbar-dark px-3">            
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="nav navbar-nav">
-                        <li class= "nav-item">
-                            <a class="nav-link mx-4" href="#about">ABOUT</a>
-                        </li>
-                        <li class= "nav-item">
-                            <a class="nav-link mx-4" href="#experience">EXPERIENCE</a>
-                        </li>
-                        <li class= "nav-item">
-                            <a class="nav-link mx-4" href="#projects">PROJECTS</a>
-                        </li>
-                    </ul>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="nav navbar-nav">
+                            <li class= "nav-item">
+                                <a class="nav-link mx-4" href="#about">ABOUT</a>
+                            </li>
+                            <li class= "nav-item">
+                                <a class="nav-link mx-4" href="#experience">EXPERIENCE</a>
+                            </li>
+                            <li class= "nav-item">
+                                <a class="nav-link mx-4" href="#skills">SKILLS</a>
+                            </li>
+                            <li class= "nav-item">
+                                <a class="nav-link mx-4" href="#projects">PROJECTS</a>
+                            </li>
+                            <li class= "nav-item">
+                                <a class="nav-link mx-4" href="#resume">RESUME</a>
+                            </li>
+                        </ul>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
         <!--Home/Hero-Section-->
-        <div class="container-fluid" id="hero-home">
             <div id="hero-section">
                 <div id="hero-header">Data Analytics</div>
                 <p id="hero-text">Whatever you need, I've got you covered.</p>
@@ -60,13 +65,16 @@
         <span class="anchor" id="about"></span>
 
         <!--About. Include resume here -->
-        <div class="container-fluid" id="abt">
-            <img src="assets/pic.jpg" id="my-pic">
-            <h1 id="about-title" alt="A picture of Jenny Pero">About Me</h1>  
-            <div id="about-desc">
-                <p>I'm a junior computer science student at Wichita State University intent on pursuing technical/UX writing or data analytics. Both professions allow me to utilize my creativity and writing skills, while still applying the analytical and computuational knowledge that I'm learning in my degree. </p>
-                <p>When not programming or writing, I enjoy singing, baking, and traveling.</p>            
-            </div>  
+        <div  id="abt">
+
+            <div id="abt-card">
+                <img src='assets/jennyCropped.JPG' id='abt-pic'>
+                <div id='abt-text'>
+                    <h5>Hi, I'm Jenny!</h5>
+                    <p>I'm a senior Computer Science student at Wichita State University looking for internships in data analytics, technical writing, or UX writing.</p>
+                    <p>All of these roles combine my passion for storytelling, content design, and research with my interest in tech and programming.</p>
+                </div> 
+            </div>
         </div>
 
         <span class="anchor" id="experience"></span>
@@ -193,8 +201,8 @@
         </div>
 
         <!--Footer -->
-        <div class="navbar mt-5" id="contact">
-            <h4>Like what you see? Then connect with me!</h4>
+        <div class="navbar navbar-dark mt-5" id="contact">
+            <h6>Like what you see? Then connect with me!</h6>
             <div class="socials">
                 <a tag="LinkedIn" title="LinkedIn" href="https://www.linkedin.com/in/jennifer-pero/" target="_blank" class="fa fa-linkedin"></a>
                 <a tag="GitHub" title="GitHub" href="https://github.com/jennycpero" target="_blank" class="fa fa-github"></a>

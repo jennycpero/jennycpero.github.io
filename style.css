@@ -48,19 +48,12 @@ body {
 
 /* Hero Section */
 
-.container-fluid {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: left;
-    border: 0px;
-}
-
 #hero-section {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
+    padding-top:10%;
 }
 
 /* UX writing: Sugue UI, Arial, sans-serif
@@ -69,21 +62,20 @@ Data analytics: Lucida Console
 */
 
 #hero-header {
-    font-size: 6em;
+    font-size: 7em;
     font-weight: bold;
     text-align: left;
 }
 
 #hero-text {
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: left;
 }
 
 #hero-home {
-    height: 100%;
+    height: 100vh;
     width: auto;
     animation: fadein 1s;
-    /* background: linear-gradient(25deg, #845ec2 25%, #d65db1 75%, #ff6f91); */
 }
 
 @keyframes fadein {
@@ -134,30 +126,36 @@ button {
 
 #abt {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: left;
     padding: 5%;
-    margin-bottom:5%;
 }
 
-#my-pic {
-    width: 15% !important;
-    height: auto;
-    border-radius: 50%;
+#abt-card {
+    background-color: white;
+    width:80%;
+    color:black;
+    display: flex;
+    overflow:hidden;
 }
 
-#about-title {
-    color:#E7AAFF;
-    font-weight: bold;
+#abt-text {
+    padding:5%;
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#about-desc {
-    text-align: left !important;
-    margin: 0 2% 0 2%;
-    font-size: 1.2em;
-    padding: 0 10% 0 10%;
+#abt-pic {
+    width:50%;
+    height:auto;
+}
+
+h5 {
+    font-weight:bold !important;
+    font-family: 'Segoe UI','sans-serif';
+    font-size: 2.5em !important;
 }
 
 /* Experience */
@@ -279,16 +277,13 @@ ul li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #101010;
 }
 
-h4 {
-    font-weight: bold;
+h6 {
+    font-size: 1.5em !important;
     text-align: center;
     margin-top: 1% !important;
-}
-
-#host-credit {
-    opacity: 70%;
 }
 
 .socials {
@@ -351,10 +346,6 @@ h1 {
 */
 
 @media screen and (max-width: 480px) {
-    #abot {
-        height: auto;
-    }
-
     #experience {
         height: auto;
     }
@@ -377,12 +368,30 @@ h1 {
     }
     
     #hero-header {
-        font-size: 2.5em;
+        font-size: 3em;
         text-align: center;
     }
 
     #hero-text {
         font-size: 1.25em !important;
+        text-align: center;
+    }
+
+    #abt-card {
+        flex-direction:column;
+    }
+
+    #abt-pic {
+        height:auto;
+        width:auto;
+    }
+
+    #abt-text{
+        width:auto;
+    }
+
+    h5 {
+        font-size: 2em !important;
         text-align: center;
     }
 
@@ -461,6 +470,11 @@ h1 {
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+
+    h5 {
+        font-size: 2em !important;
+    }
+
     #hero-section {
         justify-content: center;
         align-items: center;
@@ -475,7 +489,7 @@ h1 {
     }
 
     #hero-header {
-        font-size: 3em;
+        font-size: 4em;
         text-align: center;
     }
 
@@ -491,13 +505,21 @@ h1 {
         width: 80%;
     }
 
-    #my-pic {
-        width: 30% !important;
-        height: auto;
+    #abt-card {
+        flex-direction:column;
     }
 
-    #about-desc{
-        font-size: 1.3em;
+    #abt-pic {
+        height:auto;
+        width:auto;
+    }
+
+    #abt-text{
+        width:auto;
+    }
+
+    h5 {
+        text-align: center;
     }
 
     .exp-proj-title {
@@ -550,11 +572,15 @@ h1 {
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     #hero-header {
-        font-size: 4em;
+        font-size: 6em;
     }
 
     #hero-text {
-        font-size: 1.5em !important;
+        font-size: 2em !important;
+    }
+
+    h5 {
+        font-size: 2em !important;
     }
 
     #resume {
@@ -606,21 +632,12 @@ h1 {
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-    #hero-head {
-        font-size: 5em;
+    #hero-header {
+        font-size: 6em;
     }
 
     #hero-text {
         font-size: 2.5em !important;
-    }
-
-    #my-pic {
-        width: 20%;
-        height: auto;
-    }
-
-    #about-desc {
-        font-size: 1.2em;
     }
 
     .exp-proj-title {
