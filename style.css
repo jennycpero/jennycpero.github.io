@@ -92,28 +92,6 @@ button {
     font-weight: bold;
 }
 
-#resume {
-    background-color: #101010;
-    border-color:white;
-    width: 30%;
-    text-decoration: none;
-    color: white;
-    border-width: 3px;
-    margin-top: 2%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    border: 3px solid white;
-    padding: .5%;
-}
-
-#resume:hover {
-    color: #101010 !important;
-    background-color: #E7AAFF;
-    border-color: #101010 !important;
-    transition: .3s;
-}
-
 /* Anchor Span */
 .anchor {
     display: block;
