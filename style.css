@@ -100,7 +100,6 @@ button {
     justify-content: center;
     padding: 5%;
     overflow: hidden;
-    margin-bottom:5%;
 }
 
 #abt-card {
@@ -133,6 +132,7 @@ h5 {
 /* Experience */
 #exp {
     margin-bottom:5%;
+    padding: 2% 5% 2% 5%;
 }
 
 .exp-title {
@@ -144,12 +144,8 @@ h5 {
     padding-left:5%;
 }
 
-#exp-line {
-    background-color: white;
-    width: 3px;
-    height:300px;
-    text-align: center;
-    
+.position {
+    margin-bottom:3%;
 }
 
 .section-title {
