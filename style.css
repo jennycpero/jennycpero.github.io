@@ -265,23 +265,24 @@ h6 {
 .socials {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 .fa {
     text-decoration: none !important;
-    color: black !important;
-    background-color: white !important;
-    border-radius: 50% !important;
-    padding: 15px;
-    font-size: 20px !important;
-    margin: 10px 20px 10px 20px;
+    color: white !important;
+    background-color: #672482 !important;
+    border-radius: 20%;
+    font-size: 1.5em !important;
+    padding: 2%;
+    margin-right:5%;
 }
 
 .fa:hover {
-    background-color: #E7AAFF !important;
+    background-color: rgb(143, 88, 154) !important;
+    border: 5px black;
     transition: .3s;
+    color:white !important;
 }
 
 /* UX Writing Samples */
