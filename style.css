@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    color: white !important;
+    color: #f3f3f3 !important;
     width: auto;
     background: rgb(21,0,53);
     background: linear-gradient(90deg, rgba(38,8,84,1) 0%, rgba(79,18,112,1) 55%, rgba(46,13,63,1) 86%); 
@@ -21,7 +21,7 @@ body {
     font-size: 1.3em;
     font-weight: bold;
     text-align: center;
-    color: white !important;
+    color: #e1dede !important;
     position: relative;
     text-decoration: none;
 }
@@ -114,7 +114,7 @@ button {
 }
 
 #abt-card {
-    background-color: white;
+    background-color: #f3f3f3;
     width:80%;
     color:black;
     display: flex;
@@ -134,7 +134,7 @@ button {
     height:auto;
 }
 
-h5 {
+h3 {
     font-weight:bold !important;
     font-family: 'Segoe UI','sans-serif';
     font-size: 2.5em !important;
@@ -160,7 +160,6 @@ h5 {
 }
 
 .section-title {
-    margin-bottom: 4%;
     font-size: 3em;
     color: white;
     font-weight: bold;
@@ -184,6 +183,47 @@ h2 {
 }
 
 /* Projects */
+#projects {
+   margin-top: 5%;
+   padding-top: 2%;
+}
+
+#proj-desc{
+    text-align: center;
+}
+
+#proj-intro {
+    margin-bottom: 3%;
+}
+
+.proj-cat {
+    padding:3%;
+}
+
+.proj-cat:hover {
+    filter: brightness(85%);
+    transition: .4s;
+}
+
+h4 {
+    font-size:3em !important;
+    font-weight:bold !important;
+    color:#f3f3f3 !important;
+
+}
+
+#da {
+    background: #af4b4b;
+}
+
+#tw {
+    background-color: rgb(45, 114, 45);
+    text-align: right;
+}
+
+#uxw {
+    background-color: rgb(67, 134, 161);
+}
 
 .all-projects {
     display: grid;
@@ -245,6 +285,29 @@ h2 {
     background-color: #E7AAFF;
     color: black;
     transition: .3s;
+}
+
+/* Resume */
+#resm {
+    padding: 10%;
+    display:block;
+}
+
+#resm-btn {
+    background-color: #a060b9;
+    color:white;
+    text-decoration: none;
+    border-radius: 0% !important;
+    padding: 1% 2% 1% 2%;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    border:none;
+    margin-top: 2% !important;
+}
+
+#resm-btn:hover {
+    filter: brightness(85%);
 }
 
 /* Footer */
