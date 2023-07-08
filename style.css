@@ -18,7 +18,7 @@ body {
 }
 
 .nav-link {
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: bold;
     text-align: center;
     color: white !important;
@@ -65,6 +65,17 @@ Data analytics: Lucida Console
     font-size: 7em;
     font-weight: bold;
     text-align: left;
+}
+
+.text-show {
+    opacity: 1;
+    transform: translateY(-5%);
+    transition: .5s ease-in;
+}
+
+.text-fade {
+    opacity: 0;
+    transition: .2s ease-out;
 }
 
 #hero-text {
