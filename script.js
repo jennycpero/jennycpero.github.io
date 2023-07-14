@@ -1,5 +1,5 @@
 /* Alternate hero header text between Data Analytics,  Technical Writing, Data Visaulization, and UX Writing. */
-const heroTexts = ["Data Analytics", "Technical Writing", "UX Writing"];
+const heroTexts = ["Data Analytics", "Technical Writing", "UX Writing", "Web Development"];
 let counter = 0;
 
 setInterval(change, 3500);
@@ -18,3 +18,9 @@ function change() {
     counter = 0;
   }
 }
+
+$(".proj-cat").click(function() {
+  $projcat = $(this);
+    $projects = $projcat.next();
+    $projects.slideToggle();
+  });

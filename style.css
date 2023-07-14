@@ -201,7 +201,7 @@ h2 {
 }
 
 .proj-cat:hover {
-    filter: brightness(85%);
+    filter: brightness(90%);
     transition: .4s;
 }
 
@@ -221,40 +221,43 @@ h4 {
     text-align: right;
 }
 
-#uxw {
+#webd {
     background-color: rgb(67, 134, 161);
-}
-
-.all-projects {
-    display: grid;
-    grid-template-columns: 25% 25% 25%;
-    grid-template-rows: 50% 50%;
-    grid-gap: 1rem;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
 }
 
 .proj {
     background-color: white;
     color: black;
+    height:auto;
+    margin-top: 2%;
 }
 
-.proj-pic-main {
-    width:100%;
-    height:auto;
+.all-projects {
+    display: none;
+}
+
+.proj::before {
+    background-color: #000;
+    opacity:0.5;
 }
 
 .proj-pic {
     width: 100%;
-    height: 50%;
     object-fit: cover;
 }
 
+.proj-pic-main {
+    width: auto;
+
+}
+
 .proj-text-main {
-    height:auto;
-    padding: 4%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .proj-title {
@@ -263,27 +266,18 @@ h4 {
     font-weight: bold;
 }
 
-.proj-text {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-
-.repo-btn {
-    background-color: #101010;
+.view-btn {
+    background-color: #672482;
     color: white;
-    padding: 1% 5%;
-    font-size: 1em !important;
+    padding: 1%;
     text-decoration: none;
     font-weight: bold;
     text-align: center;
-    width: 95%;
 }
 
-.repo-btn:hover {
-    background-color: #E7AAFF;
-    color: black;
+.view-btn:hover {
+    background-color: rgb(143, 88, 154) !important;;
+    color: white;
     transition: .3s;
 }
 
@@ -308,6 +302,7 @@ h4 {
 
 #resm-btn:hover {
     filter: brightness(85%);
+    transition: .2s ease;
 }
 
 /* Footer */
