@@ -1,34 +1,27 @@
 html, body {
     height: 100%;
     width: auto;
+    font-family: 'Segoe UI','Arial','sans-serif';
 }
 
 body {
-    background-color:#202020 !important;
-    color: white !important;
+    color: #f3f3f3 !important;
     width: auto;
+    background: rgb(21,0,53);
+    background: linear-gradient(90deg, rgba(38,8,84,1) 0%, rgba(79,18,112,1) 55%, rgba(46,13,63,1) 86%); 
 }
 
 /* Top Navbar */
 
 .navbar {
-    background-color: #101010 !important;
     margin-bottom: 0 !important;
 }
 
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.5em !important;
-}
-
-.navbar-brand:hover {
-    color: #E7AAFF !important;
-    transition: .3s;
-}
-
 .nav-link {
-    font-size: 1em;
-    color: white !important;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    color: #e1dede !important;
     position: relative;
     text-decoration: none;
 }
@@ -55,47 +48,45 @@ body {
 
 /* Hero Section */
 
-.container-fluid {
+#hero-section {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    border: 0px;
+    padding-top:10%;
 }
 
-#hero-section {
-    margin-right: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    margin-left: 5%;
-}
+/* UX writing: Sugue UI, Arial, sans-serif
+Technical writing: Georgia, Times New Roman
+Data analytics: Lucida Console
+*/
 
-#hero-head {
-    font-size: 6em;
+#hero-header {
+    font-size: 7em;
     font-weight: bold;
-    color: #E7AAFF;
-    /*background: linear-gradient(to right, #FF87B9, #E7AAFF, #99A4FF 75%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /*
-    /* color:#FF87B9; */
     text-align: left;
 }
 
+.text-show {
+    opacity: 1;
+    transform: translateY(-5%);
+    transition: .5s ease-in;
+}
+
+.text-fade {
+    opacity: 0;
+    transition: .2s ease-out;
+}
+
 #hero-text {
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: left;
 }
 
 #hero-home {
-    height: 100%;
+    height: 100vh;
     width: auto;
     animation: fadein 1s;
-    /* background: linear-gradient(25deg, #845ec2 25%, #d65db1 75%, #ff6f91); */
-    background: #202020;
 }
 
 @keyframes fadein {
@@ -112,71 +103,47 @@ button {
     font-weight: bold;
 }
 
-#resume {
-    background-color: #101010;
-    border-color:white;
-    width: 30%;
-    text-decoration: none;
-    color: white;
-    border-width: 3px;
-    margin-top: 2%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    border: 3px solid white;
-    padding: .5%;
-}
-
-#resume:hover {
-    color: #101010 !important;
-    background-color: #E7AAFF;
-    border-color: #101010 !important;
-    transition: .3s;
-}
-
-/* Anchor Span */
-.anchor {
-    display: block;
-    height: 50px;
-    margin-top: -50px;
-    visibility:hidden;
-}
-
 /* About */
 
-#about {
+#abt {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: left;
     padding: 5%;
-    margin-bottom:5%;
+    overflow: hidden;
 }
 
-#my-pic {
-    width: 15% !important;
-    height: auto;
-    border-radius: 50%;
+#abt-card {
+    background-color: #f3f3f3;
+    width:80%;
+    color:black;
+    display: flex;
+    overflow:hidden;
 }
 
-#about-title {
-    color:#E7AAFF;
-    font-weight: bold;
+#abt-text {
+    padding:5%;
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#about-desc {
-    text-align: left !important;
-    margin: 0 2% 0 2%;
-    font-size: 1.2em;
-    padding: 0 10% 0 10%;
+#abt-pic {
+    width:50%;
+    height:auto;
+}
+
+h3 {
+    font-weight:bold !important;
+    font-family: 'Segoe UI','sans-serif';
+    font-size: 2.5em !important;
 }
 
 /* Experience */
-#experience {
-    padding-left: 10% !important;  
-    padding-right: 10% !important;
-    margin-bottom: 5% !important;
+#exp {
+    margin-bottom:5%;
+    padding: 2% 5% 2% 5%;
 }
 
 .exp-title {
@@ -184,19 +151,19 @@ button {
     text-align: left !important;
 }
 
-.exp-proj-title {
-    font-size: 4em;
-    color: #E7AAFF;
-    font-weight: bold;
-    margin-bottom: 2% !important;
+#exp-timeline {
+    padding-left:5%;
 }
 
-#ennovar-exp {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    padding: 0 10% 0 10%;
+.position {
+    margin-bottom:3%;
+}
+
+.section-title {
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+    text-align: center;
 }
 
 h2 {
@@ -204,75 +171,121 @@ h2 {
     text-align: left !important;
     font-size: 1.2em !important;
     text-align: center !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    margin-left:-2em;
+    margin-bottom: 0 !important;
 }
 
 .exp-date {
     font-style: italic;
     font-size: 1.2em;
-}
-
-ul li {
-    font-size: 1.1em !important;
-}
-
-.position-title {
-    font-weight: bold;
+    color:#D9D0D0;
+    margin-left: -1em !important;
 }
 
 /* Projects */
+#projects {
+   margin-top: 5%;
+}
 
-.all-projects {
-    margin: 3% 10% 5% 10%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+#proj-desc{
+    text-align: center;
+}
+
+#proj-intro {
+    margin-bottom: 3%;
+}
+
+#project-categories {
+    padding: 0 5% 0 5%;
+}
+
+.proj-cat {
+    padding:3%;
+}
+
+.proj-cat:hover {
+    filter: brightness(90%);
+    transition: .4s;
+}
+
+h4 {
+    font-size:3em !important;
+    font-weight:bold !important;
+    color:#f3f3f3 !important;
+
 }
 
 .proj {
     background-color: white;
-    width: 30%;
     color: black;
-    object-fit: contain;
+    width: 30%;
+    height:auto;
+    display:inline-block;
+    margin: 2%;
+    box-shadow: 3px 3px 10px #000;
+}
+
+.all-projects {
+    display: none;
+    text-align: center;
 }
 
 .proj-pic {
+    height: 150px;
     width: 100%;
-    height: 50%;
+    object-fit: cover;
+}
+
+.proj-text-main {
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .proj-title {
     font-size: 1.2em;
     text-align: center;
-    margin-top: 2% !important;
     font-weight: bold;
 }
 
-.proj-text {
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-
-.repo-btn {
-    background-color: #101010;
+.view-btn {
+    background-color: #672482;
     color: white;
-    padding: 1% 10%;
-    margin-bottom: 3%;
-    font-size: 1em !important;
+    padding: 2%;
     text-decoration: none;
     font-weight: bold;
     text-align: center;
-    width: 95%;
 }
 
-.repo-btn:hover {
-    background-color: #E7AAFF;
-    color: black;
+.view-btn:hover {
+    background-color: rgb(143, 88, 154) !important;;
+    color: white;
     transition: .3s;
+}
+
+/* Resume */
+#resm {
+    padding: 10%;
+    display:block;
+}
+
+#resm-btn {
+    background-color: #a25fbc;
+    color:white;
+    text-decoration: none;
+    border-radius: 0% !important;
+    padding: 1% 2% 1% 2%;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    border:none;
+    margin-top: 2% !important;
+}
+
+#resm-btn:hover {
+    filter: brightness(85%);
+    transition: .2s ease;
 }
 
 /* Footer */
@@ -281,39 +294,63 @@ ul li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #101010;
 }
 
-h3 {
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+h6 {
+    font-size: 1.5em !important;
     text-align: center;
     margin-top: 1% !important;
-}
-
-#host-credit {
-    opacity: 70%;
 }
 
 .socials {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 .fa {
     text-decoration: none !important;
-    color: black !important;
-    background-color: white !important;
-    border-radius: 50% !important;
-    padding: 15px;
-    font-size: 20px !important;
-    margin: 10px 20px 10px 20px;
+    color: white !important;
+    background-color: #672482 !important;
+    border-radius: 20%;
+    font-size: 1.5em !important;
+    padding: 2%;
+    margin-right:5%;
 }
 
 .fa:hover {
-    background-color: #E7AAFF !important;
+    background-color: rgb(143, 88, 154) !important;
+    border: 5px black;
     transition: .3s;
+    color:white !important;
+}
+
+/* UX Writing Samples */
+#uxwriting {
+    background-color: #FFC8DD;
+}
+
+.UXsamples {
+    width:auto;
+    height:75%;
+    margin: 4% 0;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Technical Writing Samples */
+#techwriting {
+    background-color: #E4CCF1;
+}
+
+/* Data Analytics */
+#dataanalytics {
+    background-color: #BDE0FE;
 }
 
 /* Screen Responsiveness 
@@ -327,10 +364,6 @@ h3 {
 */
 
 @media screen and (max-width: 480px) {
-    #about {
-        height: auto;
-    }
-
     #experience {
         height: auto;
     }
@@ -352,13 +385,31 @@ h3 {
         margin-left: 0;
     }
     
-    #hero-head {
-        font-size: 2.5em;
+    #hero-header {
+        font-size: 3em;
         text-align: center;
     }
 
     #hero-text {
         font-size: 1.25em !important;
+        text-align: center;
+    }
+
+    #abt-card {
+        flex-direction:column;
+    }
+
+    #abt-pic {
+        height:auto;
+        width:auto;
+    }
+
+    #abt-text{
+        width:auto;
+    }
+
+    h5 {
+        font-size: 2em !important;
         text-align: center;
     }
 
@@ -402,20 +453,6 @@ h3 {
         font-size: 1em !important;
     }
 
-    .all-projects {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .proj {
-        width: 90%;
-        height: 100%;
-        margin-bottom: 5%;
-        padding-bottom: 10%;
-    }
-
     .proj-title {
         text-align: center;
         font-size: 1em !important;
@@ -445,6 +482,11 @@ h3 {
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+
+    h5 {
+        font-size: 2em !important;
+    }
+
     #hero-section {
         justify-content: center;
         align-items: center;
@@ -458,8 +500,8 @@ h3 {
         padding-left: 0;
     }
 
-    #hero-head {
-        font-size: 3em;
+    #hero-header {
+        font-size: 4em;
         text-align: center;
     }
 
@@ -475,13 +517,21 @@ h3 {
         width: 80%;
     }
 
-    #my-pic {
-        width: 30% !important;
-        height: auto;
+    #abt-card {
+        flex-direction:column;
     }
 
-    #about-desc{
-        font-size: 1.3em;
+    #abt-pic {
+        height:auto;
+        width:auto;
+    }
+
+    #abt-text{
+        width:auto;
+    }
+
+    h5 {
+        text-align: center;
     }
 
     .exp-proj-title {
@@ -495,20 +545,6 @@ h3 {
 
     #ennovar-exp {
         padding: 1% 5% 0 5%;
-    }
-
-    .all-projects {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .proj {
-        width: 90%;
-        height: 100%;
-        margin-bottom: 5%;
-        padding-bottom: 5%;
     }
 
     .proj-title {
@@ -541,12 +577,16 @@ h3 {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    #hero-head {
-        font-size: 4em;
+    #hero-header {
+        font-size: 6em;
     }
 
     #hero-text {
-        font-size: 1.5em !important;
+        font-size: 2em !important;
+    }
+
+    h5 {
+        font-size: 2em !important;
     }
 
     #resume {
@@ -577,20 +617,6 @@ h3 {
         padding: 1% 5% 0 5%;
     }
 
-    .proj {
-        width: 60%;
-        height: 100%;
-        padding-bottom: 2%;
-        margin-bottom: 5%;
-    }
-
-    .all-projects {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
     .proj-title {
         text-align: center;
         font-size: 1em !important;
@@ -606,33 +632,18 @@ h3 {
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-    #hero-head {
-        font-size: 5em;
+    #hero-header {
+        font-size: 6em;
     }
 
     #hero-text {
         font-size: 2.5em !important;
     }
 
-    #my-pic {
-        width: 20%;
-        height: auto;
-    }
-
-    #about-desc {
-        font-size: 1.2em;
-    }
-
     .exp-proj-title {
         font-size: 5em;
     }
 
-    .all-projects {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
 
     .proj-title {
         text-align: center;
@@ -644,12 +655,8 @@ h3 {
     }
 
     .proj {
-        width: 60%;
+        width: auto;
         height: 100%;
-        margin-bottom: 5%;
     }
 
-    .repo-btn {
-        object-fit: contain;
-    }
 }
