@@ -23,4 +23,5 @@ $(".proj-cat").click(function() {
   $projcat = $(this);
     $projects = $projcat.next();
     $projects.slideToggle();
+    document.getElementsByClassName("all-projects").setAttribute("display","flex");
   });
