@@ -62,7 +62,7 @@ Data analytics: Lucida Console
 */
 
 #hero-header {
-    font-size: 7em;
+    font-size: 8em;
     font-weight: bold;
     text-align: left;
 }
@@ -136,27 +136,8 @@ button {
 
 h3 {
     font-weight:bold !important;
-    font-family: 'Segoe UI','sans-serif';
+    font-family: 'Segoe UI','Arial', sans-serif;
     font-size: 2.5em !important;
-}
-
-/* Experience */
-#exp {
-    margin-bottom:5%;
-    padding: 2% 5% 2% 5%;
-}
-
-.exp-title {
-    font-size:1.5em !important;
-    text-align: left !important;
-}
-
-#exp-timeline {
-    padding-left:5%;
-}
-
-.position {
-    margin-bottom:3%;
 }
 
 .section-title {
@@ -175,12 +156,6 @@ h2 {
     margin-bottom: 0 !important;
 }
 
-.exp-date {
-    font-style: italic;
-    font-size: 1.2em;
-    color:#D9D0D0;
-    margin-left: -1em !important;
-}
 
 /* Projects */
 #projects {
@@ -200,7 +175,7 @@ h2 {
 }
 
 .proj-cat {
-    padding:3%;
+    padding:4%;
 }
 
 .proj-cat:hover {
@@ -223,6 +198,7 @@ h4 {
     display:inline-block;
     margin: 2%;
     box-shadow: 3px 3px 10px #000;
+    overflow:hidden;
 }
 
 .all-projects {
@@ -288,21 +264,6 @@ h4 {
     transition: .2s ease;
 }
 
-/* Footer */
-
-#contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #101010;
-}
-
-h6 {
-    font-size: 1.5em !important;
-    text-align: center;
-    margin-top: 1% !important;
-}
-
 .socials {
     display: flex;
     flex-direction: row;
@@ -326,33 +287,6 @@ h6 {
     color:white !important;
 }
 
-/* UX Writing Samples */
-#uxwriting {
-    background-color: #FFC8DD;
-}
-
-.UXsamples {
-    width:auto;
-    height:75%;
-    margin: 4% 0;
-}
-
-h1 {
-    font-size: 3.5rem;
-    text-align:center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Technical Writing Samples */
-#techwriting {
-    background-color: #E4CCF1;
-}
-
-/* Data Analytics */
-#dataanalytics {
-    background-color: #BDE0FE;
-}
-
 /* Screen Responsiveness 
 
     320px — 480px: Mobile devices
@@ -364,9 +298,6 @@ h1 {
 */
 
 @media screen and (max-width: 480px) {
-    #experience {
-        height: auto;
-    }
 
     #projects {
         height: auto;
@@ -386,8 +317,9 @@ h1 {
     }
     
     #hero-header {
-        font-size: 3em;
+        font-size: 2em !important;
         text-align: center;
+        margin-top:5vh;
     }
 
     #hero-text {
@@ -432,25 +364,9 @@ h1 {
         font-size: 1.3em !important;
     }
 
-    .exp-proj-title {
-        font-size: 2.5em;
-    }
-
-    #ennovar-exp {
-        padding: 1% 5% 0 5%;
-    }
-
     h2 {
         font-size: 1em !important;
         margin: 2% !important;
-    }
-
-    .exp-date {
-        font-size: 1em;
-    }
-
-    ul li {
-        font-size: 1em !important;
     }
 
     .proj-title {
@@ -482,31 +398,22 @@ h1 {
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-
-    h5 {
-        font-size: 2em !important;
-    }
-
-    #hero-section {
-        justify-content: center;
-        align-items: center;
-        margin-right: 0;
-        margin-left: 0;
-    }
     
     #hero-home {
         justify-content: center;
         align-items: center;
-        padding-left: 0;
     }
 
     #hero-header {
-        font-size: 4em;
+        font-size: 3em;
         text-align: center;
+        margin-top:10vh;
+        padding: 3%;
+
     }
 
     #hero-text {
-        font-size: 1.5em !important;
+        font-size: 1.25em;
         text-align: center;
     }
 
@@ -530,49 +437,50 @@ h1 {
         width:auto;
     }
 
-    h5 {
-        text-align: center;
-    }
-
-    .exp-proj-title {
-        font-size: 3em;
-        text-align: center;
-    }
-
-    ul li{
-        font-size: 1em !important;
-    }
-
-    #ennovar-exp {
-        padding: 1% 5% 0 5%;
-    }
-
-    .proj-title {
-        text-align: center;
-        font-size: 1em !important;
-    }
-
     p {
-        font-size: .9em !important;
+        font-size: 1em;
     }
 
-    .repo-btn {
-        object-fit: contain;
-    }
-
-    .fa {
-        font-size: 15px !important;
-        text-decoration: none !important;
-        padding: 15px;
-        margin: 10px;
+    .socials {
+        justify-content: center;
     }
 
     h3 {
-        font-size: 1.2em !important
+        font-size: 2em !important;
+        text-align: center;
     }
 
-    #resume {
-        width: 50%;
+    .all-projects {
+        padding-top: 3%;
+    }
+
+    #proj-intro {
+        margin: 10% 0 10% 0;
+    }
+
+    .proj-cat {
+        padding: 8%;
+    }
+
+    .proj {
+        width: 80%;
+        margin-bottom:8%;
+    }
+
+    h4 {
+        font-size:1.8em !important;
+    }
+
+    h5 {
+        font-size: 1.25em !important;
+    }
+
+    #resm {
+        padding: 15%;
+    }
+
+    #resm-call {
+        text-align: left;
     }
 }
 
