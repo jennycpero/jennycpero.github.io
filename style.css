@@ -479,9 +479,9 @@ h4 {
         padding: 25% 10%;
     }
 
-    #resm-call {
+    #resm > h3 {
         text-align: left;
-        font-size:1.5em !important;
+        font-size:2em !important;
     }
 }
 
@@ -527,6 +527,14 @@ h4 {
 
     #resm {
         padding: 10% 5%;
+    }
+
+}
+
+/* 1025px — 1200px: Desktops, large screens */
+@media screen and (min-width:1025px) {
+    #abt-text > p {
+        font-size: 1.25em;
     }
 
 }
