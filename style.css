@@ -417,13 +417,6 @@ h4 {
         text-align: center;
     }
 
-    #resume {
-        font-size: 15px !important;
-        margin-top: 0%;
-        margin-bottom: 3%;
-        width: 80%;
-    }
-
     #abt-card {
         flex-direction:column;
     }
@@ -497,6 +490,10 @@ h4 {
 
     h5 {
         font-size: 2em !important;
+    }
+
+    .proj {
+        width:70% !important;
     }
 
     #my-pic {
