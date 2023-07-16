@@ -62,7 +62,7 @@ Data analytics: Lucida Console
 */
 
 #hero-header {
-    font-size: 8em;
+    font-size: 7em;
     font-weight: bold;
     text-align: left;
 }
@@ -127,6 +127,10 @@ button {
     display:flex;
     flex-direction: column;
     justify-content: center;
+}
+
+p {
+    font-size:1.25em !important;
 }
 
 #abt-pic {
@@ -476,17 +480,19 @@ h4 {
     }
 
     #resm {
-        padding: 15%;
+        padding: 25% 10%;
     }
 
     #resm-call {
         text-align: left;
+        font-size:1.5em !important;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     #hero-header {
-        font-size: 6em;
+        font-size: 5em;
+        margin-top:5vh;
     }
 
     #hero-text {
@@ -497,32 +503,17 @@ h4 {
         font-size: 2em !important;
     }
 
-    #resume {
-        font-size: 15px !important;
-        margin-top: 0%;
-        margin-bottom: 3%;
-        width: 50%;
-    }
-
     #my-pic {
-        width: 25% !important;
+        width: 50% !important;
         height: auto;
     }
 
-    #about-desc {
-        font-size: 1.2em;
+    h3 {
+        font-size: 2em !important;
     }
 
-    ul li {
-        font-size: 1.2em !important;
-    }
-
-    .exp-proj-title {
-        font-size: 4em;
-    }
-
-    #ennovar-exp {
-        padding: 1% 5% 0 5%;
+    p {
+        font-size: 1em !important;
     }
 
     .proj-title {
@@ -530,41 +521,16 @@ h4 {
         font-size: 1em !important;
     }
 
-    p {
-        font-size: .9em !important;
+    h4 {
+        font-size: 3em !important;
     }
 
-    .repo-btn {
-        object-fit: contain;
-    }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-    #hero-header {
-        font-size: 6em;
+    h5 {
+        font-size:1.5em !important;
     }
 
-    #hero-text {
-        font-size: 2.5em !important;
-    }
-
-    .exp-proj-title {
-        font-size: 5em;
-    }
-
-
-    .proj-title {
-        text-align: center;
-        font-size: 1em !important;
-    }
-
-    p {
-        font-size: .9em !important;
-    }
-
-    .proj {
-        width: auto;
-        height: 100%;
+    #resm {
+        padding: 10% 5%;
     }
 
 }
