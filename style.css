@@ -109,13 +109,13 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5%;
+    padding: 5% 15%;
     overflow: hidden;
 }
 
 #abt-card {
     background-color: #f3f3f3;
-    width:80%;
+    width:auto;
     color:black;
     display: flex;
     overflow:hidden;
@@ -127,6 +127,10 @@ button {
     display:flex;
     flex-direction: column;
     justify-content: center;
+}
+
+#abt-text > p {
+    font-size: 1em !important;
 }
 
 #abt-pic {
@@ -428,10 +432,7 @@ h4 {
 
     #abt-text{
         width:auto;
-    }
-
-    p {
-        font-size: 1em;
+        padding: 10%;
     }
 
     .socials {
@@ -496,22 +497,17 @@ h4 {
         width:70% !important;
     }
 
-    #my-pic {
-        width: 50% !important;
-        height: auto;
-    }
-
     h3 {
         font-size: 2em !important;
-    }
-
-    p {
-        font-size: 1em !important;
     }
 
     .proj-title {
         text-align: center;
         font-size: 1em !important;
+    }
+
+    #about-pic {
+        width:50%;
     }
 
     h4 {
@@ -528,10 +524,3 @@ h4 {
 
 }
 
-/* 1025px — 1200px: Desktops, large screens */
-@media screen and (min-width:1025px) {
-    #abt-text > p {
-        font-size: 1.25em;
-    }
-
-}
