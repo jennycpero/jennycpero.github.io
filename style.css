@@ -48,23 +48,22 @@ body {
 
 /* Hero Section */
 
-#hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top:10%;
-}
-
 /* UX writing: Sugue UI, Arial, sans-serif
 Technical writing: Georgia, Times New Roman
 Data analytics: Lucida Console
 */
 
+#hero-section {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:80%;
+}
+
 #hero-header {
-    font-size: 7em;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 
 .text-show {
@@ -80,7 +79,7 @@ Data analytics: Lucida Console
 
 #hero-text {
     font-size: 2.5em;
-    text-align: left;
+    text-align: center;
 }
 
 #hero-home {
@@ -106,10 +105,6 @@ button {
 /* About */
 
 #about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5% 15%;
     overflow: hidden;
 }
 
@@ -119,14 +114,6 @@ button {
     color:black;
     display: flex;
     overflow:hidden;
-}
-
-#abt-text {
-    padding:5%;
-    width:50%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 #abt-text > p {
@@ -279,7 +266,6 @@ h4 {
     color: white !important;
     background-color: #672482 !important;
     border-radius: 20%;
-    font-size: 1.5em !important;
     padding: 2%;
     margin-right:5%;
 }
@@ -289,6 +275,10 @@ h4 {
     border: 5px black;
     transition: .3s;
     color:white !important;
+}
+
+#resm > h5 {
+    text-align: left;
 }
 
 /* Screen Responsiveness 
@@ -301,104 +291,49 @@ h4 {
 
 */
 
-@media screen and (max-width: 480px) {
-
-    #projects {
-        height: auto;
-    }
-
-    #hero-home {
-        justify-content: center;
-        align-items: center;
-        padding-left: 0;
-    }
-
-    #hero-section {
-        justify-content: center;
-        align-items: center;
-        margin-right: 0;
-        margin-left: 0;
-    }
+@media screen and (max-width:430px) {
     
     #hero-header {
-        font-size: 2em !important;
-        text-align: center;
-        margin-top:5vh;
+        font-size: 2rem !important;
     }
 
     #hero-text {
-        font-size: 1.25em !important;
-        text-align: center;
+        font-size: 1.25rem !important;
+    }
+
+    #about {
+        padding: 10% 4%;
     }
 
     #abt-card {
-        flex-direction:column;
+        display: block;
     }
 
     #abt-pic {
-        height:auto;
-        width:auto;
-    }
-
-    #abt-text{
-        width:auto;
-    }
-
-    h5 {
-        font-size: 2em !important;
+        width: 100%;
         text-align: center;
     }
 
-    #resume {
-        font-size: 1em !important;
-        width: 50% !important;
+    #abt-text {
+        padding: 5%;
     }
 
-    #my-pic {
-        width: 40% !important;
-        height: auto;
-    }
-
-    #about-desc {
+    #abt-text > h3 {
         text-align: center;
-        font-size: 1.2em;
+        font-size: 2rem !important;
     }
 
-    h3 {
-        font-size: 1.3em !important;
-    }
-
-    h2 {
-        font-size: 1em !important;
-        margin: 2% !important;
-    }
-
-    .proj-title {
-        text-align: center;
-        font-size: 1em !important;
-    }
-
-    p {
-        font-size: .9em !important;
-    }
-
-    .fa {
-        font-size: 15px !important;
-        text-decoration: none !important;
-        padding: 15px;
-        margin: 10px;
-    }
-
-    h3 {
-        font-size: 1.2em !important
+    #abt-text > p {
+        font-size: 1.25rem !important;
     }
 
     .socials {
-        width: auto;
-        object-fit: contain;
+        justify-content: center;
     }
 
-
+    .fa {
+        font-size:2rem !important;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
