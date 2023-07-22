@@ -1,5 +1,5 @@
 /* Alternate hero header text between Data Analytics,  Technical Writing, Data Visaulization, and UX Writing. */
-const heroTexts = ["Data Analytics", "Technical Writing", "UX Writing", "Web Development"];
+const heroTexts = ["Data Analytics", "Technical Writing", "Data Visualization", "UX Writing"];
 let counter = 0;
 
 setInterval(change, 3500);
