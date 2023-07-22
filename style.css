@@ -188,7 +188,6 @@ h4 {
     box-shadow: 3px 3px 10px #000;
     overflow:hidden;
     margin-bottom: 10%;
-
 }
 
 .all-projects {
@@ -289,7 +288,7 @@ h4 {
 
 */
 
-@media screen and (max-width:430px) {
+@media screen and (max-width:534px) {
     
     #hero-header {
         font-size: 2rem !important;
@@ -359,81 +358,161 @@ h4 {
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    
-    #hero-home {
-        justify-content: center;
-        align-items: center;
-    }
-
+@media screen and (min-width:535px) and (max-width:760px) {
     #hero-header {
-        font-size: 3em;
-        text-align: center;
-        margin-top:10vh;
-        padding: 3%;
-
+        font-size: 3rem !important;
     }
 
     #hero-text {
-        font-size: 1.25em;
-        text-align: center;
+        font-size: 1.75rem !important;
+    }
+
+    #about {
+        padding: 10% 4%;
     }
 
     #abt-card {
-        flex-direction:column;
+        display: block;
     }
 
     #abt-pic {
-        height:auto;
-        width:auto;
+        width: 100%;
+        text-align: center;
     }
 
-    #abt-text{
-        width:auto;
-        padding: 10%;
+    #abt-text {
+        padding: 5%;
+    }
+
+    #abt-text > p {
+        font-size: 1.5rem !important;
+    }
+
+    #abt-text > h3 {
+        text-align: center;
+        font-size: 3rem !important;
+    }
+
+    #proj-intro > h5 {
+        font-size: 1.5rem !important;
+    }
+
+    .section-title {
+        font-size: 3rem !important;
+    }
+
+    .proj-text-main > .proj-title {
+        font-size: 1.75rem !important;
+    }
+
+    .proj-text-main > p {
+        font-size: 1.5rem !important;
+    }
+
+    .proj-cat > h4 {
+        font-size: 2.25rem !important;
+    }
+
+    .proj-cat > h5 {
+        font-size: 1.75rem !important;
+    }
+
+    .proj-pic {
+        height:200px;
+    }
+
+    .all-projects > p {
+        font-size: 1.5rem !important;
     }
 
     .socials {
         justify-content: center;
     }
 
-    h3 {
-        font-size: 2em !important;
+    .fa {
+        font-size:2rem !important;
+    }
+
+    #resm > h5 {
+        font-size: 1.5rem !important;
+    }
+
+    #resm-btn {
+        padding: 2% 5%;
+        font-size: 1.5rem !important;
+    }
+
+    .view-btn {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 800px) {
+    
+    #hero-header {
+        font-size: 3rem !important;
+    }
+
+    #hero-text {
+        font-size: 1.5rem !important;
+    }
+
+    #about {
+        padding: 10% 4%;
+    }
+
+    #abt-card {
+        display: block;
+    }
+
+    #abt-pic {
+        width: 100%;
         text-align: center;
     }
 
-    .all-projects {
-        padding-top: 3%;
+    #abt-text {
+        padding: 5%;
     }
 
-    #proj-intro {
-        margin: 10% 0 10% 0;
+    .socials {
+        justify-content: center;
     }
 
-    .proj-cat {
-        padding: 8%;
+    .fa {
+        font-size:2rem !important;
     }
 
-    .proj {
-        width: 80%;
-        margin-bottom:8%;
+    .section-title {
+        font-size: 2.5rem !important;
     }
 
-    h4 {
-        font-size:1.8em !important;
+    .proj-text-main > .proj-title {
+        font-size: 1.75rem !important;
     }
 
-    h5 {
-        font-size: 1.25em !important;
+    .proj-text-main > p {
+        font-size: 1.5rem !important;
     }
 
-    #resm {
-        padding: 25% 10%;
+    .all-projects > p {
+        font-size: 1.5rem !important;
+    }
+
+    .proj-pic {
+        height:200px;
     }
 
     #resm > h3 {
-        text-align: left;
-        font-size:2em !important;
+        font-size: 2rem !important;
+    }
+
+    #resm-btn {
+        padding: 2% 5%;
+        font-size: 1.5rem !important;
+    }
+
+    #resm > h5 {
+        font-size: 1.5rem !important;
     }
 }
 
