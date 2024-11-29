@@ -4,11 +4,10 @@
 <!DOCTYPE html> 
 <html lang ="en-US">
     <head>
-        <title>Jenny Pero</title>
+        <title>Jenny Pero - Portfolio Site</title>
         <link rel="stylesheet" href="style.css">
         <meta charset="utf-8">
         <link rel="icon" href="assets/newlogo.png" type="image/icon type">
-        <script src="script.js" defer></script>
 
         <!--for bootstrap-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +24,7 @@
     <body>
         <!--Navigation-->
         <div id="hero-home">
-            <nav class="navbar navbar-expand-md navbar-dark px-3">            
+            <nav class="navbar navbar-expand-md navbar-dark px-3 mb-4">            
                 <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -33,38 +32,47 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                         <ul class="nav navbar-nav">
                             <li class= "nav-item">
-                                <a class="nav-link mx-4" href="#about">ABOUT</a>
+                                <a class="nav-link mx-4" href="#about">About</a>
                             </li>
                             <li class= "nav-item">
-                                <a class="nav-link mx-4" href="#projects">PROJECTS</a>
+                                <a class="nav-link mx-4" href="#projects">Experience</a>
                             </li>
                             <li class= "nav-item">
-                                <a class="nav-link mx-4" href="#resume">RESUME</a>
+                                <a class="nav-link mx-4" href="#resume">Portfolio</a>
                             </li>
                         </ul>
                 </div>
             </nav>
-
         <!--Home/Hero-Section-->
             <div id="hero-section">
-                <div id="hero-header">Data Analytics</div>
-                <p class="text-show" id="hero-text">Whatever you need, I've got you covered.</p>
-            </div>                
-        </div>
-
-        <!--About -->
-        <div id="about">
-            <div id="abt-card">
-                <img src='assets/jennyCropped.JPG' id='abt-pic'>
+                <div id="home-card">
                 <div id='abt-text'>
-                    <h3>Hi, I'm Jenny!</h3>
-                    <p>I'm a senior Comp Sci student at Wichita State University looking for internships in data analytics, technical writing, data visualization, or UX writing.</p>
-                    <p>All of these roles combine my passion for storytelling, design, and research with my interest in tech and programming.</p>
+                    <h2>Hi, I'm Jenny!</h2>
+                    <p>An aspiring technical editor/writer looking for internships and new grad roles. </p>
                     <span class="socials">
                         <a tag="LinkedIn" title="LinkedIn" href="https://www.linkedin.com/in/jennifer-pero/" target="_blank" class="fa fa-linkedin"></a>
                         <a tag="GitHub" title="GitHub" href="https://github.com/jennycpero" target="_blank" class="fa fa-github"></a>
                     </span>
                 </div> 
+                <img src='assets/portrait.jpg' id='home-pic'>
+                </div>
+                <a id="resm-link" href="assets/Jennifer Pero Resume.pdf">View Resume</a>
+            </div>           
+        </div>
+
+        <!--About -->
+        <div id="about">
+            <div id="abt-card">
+                <div id='abt-text'>
+                    <h3>About Me</h3>
+                    <p>I’m a computer science major at Wichita State University, graduating Spring 2025. Though I’ve always loved tech, I would like a career which intersects with my other lifelong passion: writing and editing!</p>
+                    <p>When not writing or learning tech, I love baking, travelling, and all things music and choir.</p>
+                    <span class="socials">
+                        <a tag="LinkedIn" title="LinkedIn" href="https://www.linkedin.com/in/jennifer-pero/" target="_blank" class="fa fa-linkedin"></a>
+                        <a tag="GitHub" title="GitHub" href="https://github.com/jennycpero" target="_blank" class="fa fa-github"></a>
+                    </span>
+                </div> 
+                <img src='assets/IMG_5097.jpg' id='abt-pic'>
             </div>
         </div>
         
@@ -72,96 +80,11 @@
         <!-- data analytics, technical writing/UX writing, web dev-->
         <div id="projects">
             <div id="proj-intro">
-                <h1 class="section-title">See my projects</h1>
-                <h5 id="proj-desc">Take a peek at what I've been working on.</h5>
+                <h3>My Public Portfolio</h3>
+                <h4>Select any of the cards below to view its document in PDF format.</h4>
             </div>
-            <div id="project-categories">
-                    <div class="proj-cat" style="background: #af4b4b">
-                        <h4>Data Analytics</h4>
-                        <h5>Visualizations, analysis, and web scraping.</h5>
-                    </div>
-                    <div class ="all-projects" style="background: #af4b4b">
-                        <div class="proj">
-                            <div class="proj-pic-main">
-                            <img src="assets/workinjurypowerbi.png" class="proj-pic"> 
-                            </div>
-                            <div class="proj-text-main">
-                                <div class="proj-title">Work Injury Power BI Dashboard</div>
-                                <p>Work injury metrics for a fake power plant company.</p>
-                                <a class="view-btn" href='https://app.powerbi.com/view?r=eyJrIjoiMTc4ODk1MmYtMjFhZi00Zjc1LTkyYTAtZjdjZDU3MzRiOTVhIiwidCI6ImUwNWI2YjNmLTE5ODAtNGIyNC04NjM3LTU4MDc3MWY0NGRlZSIsImMiOjN9' target="_blank">View Dashboard</a>
-                            </div>
-                        </div>
-
-                        <div class="proj">
-                            <div class="proj-pic-main">
-                            <img src="assets/tableaudash.png" class="proj-pic"> 
-                            </div>
-                            <div class="proj-text-main">
-                                <div class="proj-title">Ticket Metrics Tableau Dashboard</div>
-                                <p>Dashboard reporting fake 2020 help desk ticket metrics.</p>
-                                <a class="view-btn" href='https://public.tableau.com/views/HelpDeskTicketMetrics2020/HelpDeskMetrics2020?:language=en-US&:display_count=n&:origin=viz_share_link' target="_blank">View Dashboard</a>
-                            </div>
-                        </div>
-
-                        <div class="proj">
-                            <div class="proj-pic-main">
-                                <img src="assets/popeyes-pic.png" class="proj-pic">
-                            </div>
-                                <div class="proj-text-main">
-                                    <div class="proj-title">Popeyes Locations Scraper</div>
-                                        <p>Web scrapes US Popeyes locations and compiles it into a csv file using Python.</p>
-                                        <a class="view-btn" href='https://github.com/jennycpero/Popeyes-Locations' target="_blank">View GitHub Repository</a>
-                                    </div>
-
-                        </div>
-                    </div>
-
-                    <div class="proj-cat" style="background-color: rgb(67, 134, 161); text-align: right;">
-                        <h4>Technical / UX Writing</h4>
-                        <h5>Instructions, style guides, and microcopy.</h5>
-                    </div>
-                    <div class="all-projects" style="background-color: rgb(67, 134, 161)">
-                        <div class="proj">
-                            <div class="proj-pic-main">
-                                <img src="assets/TechnicalWritingSamples/discbotpreview.png" class="proj-pic"> 
-                            </div>
-                            <div class="proj-text-main">
-                                <div class="proj-title">Creating a Discord Bot</div>
-                                <p>Guide on how to create a simple Discord greeting bot using Python.</p>
-                                <a class="view-btn" href='assets/TechnicalWritingSamples/Creating a Discord Bot.pdf' target="_blank">View Guide</a>
-                            </div>
-                        </div> 
-                        <div class="proj">
-                            <div class="proj-pic-main">
-                                <img src="assets/TechnicalWritingSamples/styleguidetitle.png" style="border-bottom: 1px solid black" class="proj-pic"> 
-                            </div>
-                            <div class="proj-text-main">
-                                <div class="proj-title">Documentation Style Guide</div>
-                                <p>Documentation style guide for a fake statistical software company.</p>
-                                <a class="view-btn" href='assets/TechnicalWritingSamples/Documentation Style Guide.pdf' target="_blank">View Guide</a>
-                            </div>
-                        </div> 
-                        <div class="proj">
-                            <div class="proj-pic-main">
-                                <img src="assets/TechnicalWritingSamples/awsinstance.png" class="proj-pic"> 
-                            </div>
-                            <div class="proj-text-main">
-                                <div class="proj-title">Introduction to AWS Instances</div>
-                                <p>Introductory guide to AWS instances and how to launch, configure, and connect to one.</p>
-                                <a class="view-btn" href='assets/TechnicalWritingSamples/Introduction to AWS Instances.pdf' target="_blank">View Guide</a>
-                            </div>
-                        </div> 
-                    </div>
-            </div>           
         </div>
 
         <span class="anchor" id="resume"></span>
-
-        <!-- Resume -->
-        <div id="resm">
-            <h3>Before you go, take my resume!</h3>
-            <h5>Get the details on my experience, skills, and more. All in one document.</h5>
-            <input type="button" id='resm-btn' onclick="location.href='assets/Jennifer Pero Resume.pdf'" value="View Resume"></button>
-        </div>
     </body>
 </html>
