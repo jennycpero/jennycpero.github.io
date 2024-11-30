@@ -145,6 +145,7 @@ a {
     text-decoration: none !important;
     color:#464646 !important;
     font-weight: bold;
+    font-size:1.25rem;
 }
 
 a:hover::before {
@@ -204,7 +205,11 @@ h2 {
 /* Experience */
 
 #experience {
-    padding:4% 4% 0 4%;
+    padding:4%;
+}
+
+#exp-intro {
+    padding:4% 4% 0% 4%;
 }
 
 .exp-card {
@@ -216,7 +221,7 @@ h2 {
 
 .exp-title {
     font-weight: bold;
-    font-size:1.2rem;
+    font-size:1.1rem !important;
 }
 
 #ttc-exp-card {
@@ -233,7 +238,7 @@ h2 {
 
 h4 {
     font-weight:bold !important;
-    font-size:1.5rem !important;
+    font-size:1.2rem !important;
     color: black;
 }
 
@@ -267,6 +272,7 @@ h5 {
     text-align: center;
     overflow:hidden !important;
     height:100%;
+    padding-bottom:2%;
 }
 
 .proj-card:hover {
@@ -280,7 +286,7 @@ h5 {
 }
 
 .card-desc {
-    padding: 2%;
+    padding: 4% 2% 0% 2%;
 }
 
 /* Screen Responsiveness 
@@ -294,13 +300,38 @@ h5 {
 */
 
 @media screen and (max-width:534px) {
-    
-    #hero-header {
-        font-size: 2rem !important;
+    #hero-section {
+        text-align: center;
     }
 
-    #hero-text {
-        font-size: 1.25rem !important;
+    #hero-text{
+        margin-top:20% !important;
+        margin-bottom: 5% !important;
+    }
+
+    #hero-card{
+        display:block;
+        text-align: center;
+    }
+
+    h2 {
+        font-size:2.5rem !important;
+    }
+
+    #hero-desc{
+        font-size:1.25rem !important;
+    }
+
+    #hero-pic {
+        display:none;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .fa {
+        font-size:2rem !important;
     }
 
     #about {
@@ -320,7 +351,7 @@ h5 {
         padding: 5%;
     }
 
-    #abt-text > h3 {
+    h3 {
         text-align: center;
         font-size: 2rem !important;
     }
@@ -329,32 +360,26 @@ h5 {
         font-size: 1.25rem !important;
     }
 
-    #hero-card{
-        display:block;
-        text-align: center;
+    .exp-card {
+        padding: 4% !important;
     }
 
-    #hero-section {
-        text-align: center;
-    }
-
-    .socials {
-        justify-content: center;
-    }
-
-    .fa {
-        font-size:2rem !important;
-    }
 
 }
 
-@media screen and (min-width:535px) and (max-width:765px) {
-    #hero-header {
-        font-size: 3rem !important;
+@media screen and (min-width:535px) and (max-width:763px) {
+    #hero-section{
+        text-align: center;
     }
 
     #hero-text {
         font-size: 1.5rem !important;
+        text-align: center;
+        margin-bottom:4%;
+    }
+
+    #hero-pic {
+        display:none;
     }
 
     #about {
@@ -383,30 +408,6 @@ h5 {
         font-size: 2.5rem !important;
     }
 
-    .section-title {
-        font-size: 3rem !important;
-    }
-
-    .proj-text-main > .proj-title {
-        font-size: 1.5rem !important;
-    }
-
-    .proj-text-main > p {
-        font-size: 1.25rem !important;
-    }
-    
-    .proj-cat > h4 {
-        font-size: 2rem !important;
-    }
-
-    .proj-cat > h5 {
-        font-size: 1.25rem !important;
-    }
-
-    .all-projects > p {
-        font-size: 1.25rem !important;
-    }
-
     .socials {
         justify-content: center;
     }
@@ -414,20 +415,17 @@ h5 {
     .fa {
         font-size:2rem !important;
     }
-
-    .view-btn {
-        font-size: 1.25rem !important;
-    }
 }
 
-@media screen and (min-width: 766px) and (max-width: 899px) {
-    
-    #hero-header {
-        font-size: 4rem !important;
+@media screen and (min-width: 764px) and (max-width: 899px) {
+
+    #hero-card {
+        margin-top:10%;
+        margin-bottom:10%;
     }
 
-    #hero-text {
-        font-size: 1.75rem !important;
+    .socials {
+        justify-content: center !important;
     }
 
     #about {
@@ -457,32 +455,6 @@ h5 {
         font-size:1.5rem !important;
     }
 
-    .section-title {
-        font-size: 3rem !important;
-    }
-
-    .proj {
-        width:40%;
-        display: inline-block;
-        margin: 2% 4%;
-    }
-
-    .all-projects {
-        padding: 2% 0;
-    }
-
-    .proj-cat > h4 {
-        font-size: 2.5rem !important;
-    }
-
-    .proj-cat > h5 {
-        font-size: 1.25rem !important;
-    }
-
-    .proj-title {
-        font-size: 1.25rem !important;
-    }
-
     #proj-desc {
         font-size: 1.5rem !important;
     }
@@ -509,12 +481,8 @@ h5 {
         top: 35%;
     }
 
-    #hero-header {
-        font-size: 5rem;
-    }
-
-    #hero-text {
-        font-size: 2rem !important;
+    .socials {
+        justify-content: center !important;
     }
 
     #about {
@@ -551,56 +519,18 @@ h5 {
         font-size: 4rem !important;
     }
 
-    .all-projects {
-        padding: 0 !important;
-    }
-
-    .proj {
-        width: 30%;
-        display:inline-block;
-        margin:2% 2%;
-    }
-
     #proj-intro > h5 {
         font-size: 1.5rem !important;
     }
 
-    .proj-cat > h4 {
-        font-size: 2.5rem !important;
-    }
-
-    .proj-cat > h5 {
-        font-size: 1.25rem !important;
-    }
-
-    .proj-text-main > .proj-title {
-        font-size: 1.25rem !important;
-    }
-
-    .proj-text-main > p {
-        font-size: 1rem !important;
-    }
-
-    .all-projects > p {
-        font-size: 1.25rem !important;
-    }
-
     .proj-pic {
         height:150px;
-    }
-
-    .view-btn {
-        font-size: 1rem !important;
     }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1499px) {
     #hero-section {
         top:40%;
-    }
-    
-    #hero-header {
-        font-size: 6rem;
     }
 
     #about {
@@ -658,10 +588,6 @@ h5 {
     #hero-section {
         top:40%;
     }
-    
-    #hero-header {
-        font-size:7rem;
-    }
 
     #about {
         padding: 5%;
@@ -688,31 +614,8 @@ h5 {
         font-size: 2rem;
     }
 
-    .proj-cat > h4 {
-        font-size:3rem;
-    }
-
-    .proj-cat > h5 {
-        font-size: 2rem;
-    }
-
-    .proj {
-        width: 30%;
-        margin: 2%;
-        display:inline-block;
-    }
-
     .proj-pic {
         height:150px;
-    }
-
-    .all-projects > p {
-        font-size: 1.5rem;
-    }
-
-    .all-projects {
-        padding: 0;
-        margin: 0;
     }
 }
 
