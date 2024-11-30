@@ -200,7 +200,31 @@ h2 {
 /* Experience */
 
 #experience {
-    padding:4%;
+    padding:4% 4% 0 4%;
+}
+
+.exp-card {
+    margin-top:2%;
+    padding:1% 2% 1% 2%;
+    border-radius: 25px;
+    color:white;
+}
+
+.exp-title {
+    font-weight: bold;
+    font-size:1.2rem;
+}
+
+#ttc-exp-card {
+    background-color:#4F4F4F;
+}
+
+#ti-exp-card {
+    background-color: #ce4545;
+}
+
+#ib-exp-card {
+    background-color: #587b56;
 }
 
 h4 {
